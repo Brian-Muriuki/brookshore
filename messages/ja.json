@@ -1,0 +1,174 @@
+{
+  "common": {
+    "viewPackages": "パッケージを見る",
+    "bookNow": "今すぐ予約",
+    "talkToExpert": "専門家に相談",
+    "learnMore": "詳しく見る",
+    "viewItinerary": "旅程を見る",
+    "days": "日間",
+    "day": "日",
+    "adults": "大人",
+    "kids": "子供",
+    "kidsAge": "子供（12歳未満）",
+    "close": "閉じる",
+    "send": "送信",
+    "sending": "送信中...",
+    "required": "必須"
+  },
+  "nav": {
+    "corporate": "法人向け",
+    "about": "会社概要",
+    "contact": "お問い合わせ",
+    "packages": "サファリパッケージ"
+  },
+  "hero": {
+    "badge": "ケニアサファリの専門家",
+    "title": "専門家が設計した忘れられないケニアサファリ",
+    "description": "ビッグ5、ヌーの大移動、ケニアの最も象徴的な目的地を体験できる厳選サファリパッケージをご覧ください。すべての詳細が計画されているので、冒険に集中できます。",
+    "trustBadge1": "詳細な日程表",
+    "trustBadge2": "お問い合わせは無料",
+    "trustBadge3": "24時間WhatsAppサポート"
+  },
+  "packages": {
+    "eyebrow": "パッケージ",
+    "title": "厳選されたケニアサファリアドベンチャー",
+    "description": "詳細な日程表付きの手作りサファリパッケージをご覧ください。各パッケージは究極のケニア体験を提供するよう設計されています。"
+  },
+  "whyUs": {
+    "eyebrow": "Brookshoresを選ぶ理由",
+    "title": "私たちが手配を担当、あなたは冒険を楽しむ",
+    "description": "ご予約の瞬間からお帰りまで、すべての詳細をカバーします。",
+    "item1Title": "詳細な旅程",
+    "item1Desc": "サファリアドベンチャーの毎日の予定が明確にわかります。",
+    "item2Title": "専門ガイド",
+    "item2Desc": "ケニアの公園を熟知した経験豊富なドライバーガイド。",
+    "item3Title": "質の高い宿泊施設",
+    "item3Desc": "予算からラグジュアリーまで厳選された宿泊施設。",
+    "item4Title": "24時間サポート",
+    "item4Desc": "旅行前から旅行中までWhatsAppサポート。"
+  },
+  "destinations": {
+    "eyebrow": "人気の目的地",
+    "title": "どこに行きたいですか？",
+    "description": "ケニアは信じられないほど多様性に富んでいます。象徴的なマサイマラから静かなリフトバレーの湖まで。",
+    "masaiMara": "マサイマラ",
+    "masaiMaraDesc": "ビッグ5と大移動",
+    "amboseli": "アンボセリ",
+    "amboseliDesc": "象とキリマンジャロ",
+    "samburu": "サンブル",
+    "samburuDesc": "スペシャル5",
+    "lakeNakuru": "ナクル湖",
+    "lakeNakuruDesc": "サイとフラミンゴ"
+  },
+  "testimonials": {
+    "eyebrow": "お客様の声",
+    "title": "旅行者の声",
+    "description": "私たちがサポートしたお客様や法人チームからの声。"
+  },
+  "newsletter": {
+    "eyebrow": "ニュースレター",
+    "title": "お得な情報と新しい体験を受け取る",
+    "description": "居住者向けのお得な情報、直前の週末パッケージ、季節のサファリの最新情報をお届けします。",
+    "placeholder": "メールアドレスを入力",
+    "button": "登録"
+  },
+  "footer": {
+    "tagline": "サファリパッケージ、ビーチエスケープ、週末旅行、法人旅行ソリューション—居住者と海外からのお客様のために設計。",
+    "quickLinks": "クイックリンク",
+    "contact": "お問い合わせ",
+    "location": "ケニア、ナイロビ",
+    "copyright": "© {year} Brookshores Safaris."
+  },
+  "booking": {
+    "title": "このパッケージを予約",
+    "subtitle": "詳細をご記入いただければ、空き状況を確認いたします。",
+    "name": "お名前",
+    "namePlaceholder": "お名前",
+    "whatsapp": "WhatsApp番号",
+    "whatsappPlaceholder": "+81 XX XXXX XXXX",
+    "email": "メールアドレス",
+    "emailPlaceholder": "you@example.com",
+    "travelDates": "旅行日程",
+    "travelDatesNote": "これは{days}日間のパッケージです",
+    "startDate": "開始日",
+    "endDate": "終了日",
+    "travelers": "旅行者",
+    "airportTransfers": "空港送迎を含む",
+    "airportTransfersDesc": "ケニア到着時に空港でお迎えします",
+    "accommodation": "宿泊スタイル",
+    "accommodation3Star": "3つ星（エコノミー）",
+    "accommodation3StarDesc": "基本的なキャンプ、共有施設",
+    "accommodation4Star": "4つ星（スタンダード）",
+    "accommodation4StarDesc": "快適なロッジ、専用バスルーム",
+    "accommodation5Star": "5つ星（コンフォート）",
+    "accommodation5StarDesc": "高品質ロッジ、充実した設備",
+    "specialRequests": "特別なご要望（任意）",
+    "specialRequestsPlaceholder": "食事制限、特別な機会、バリアフリー対応...",
+    "submitButton": "予約する - 見積もりを取得",
+    "trustNote1": "お問い合わせに料金はかかりません",
+    "trustNote2": "30日前まで無料キャンセル",
+    "trustNote3": "24時間WhatsAppサポート",
+    "errors": {
+      "nameRequired": "お名前は必須です",
+      "phoneRequired": "WhatsApp番号は必須です",
+      "emailRequired": "メールアドレスは必須です",
+      "emailInvalid": "有効なメールアドレスを入力してください",
+      "dateRequired": "旅行日程を選択してください",
+      "adultsRequired": "大人1名以上が必要です",
+      "submitError": "エラーが発生しました。もう一度お試しください。"
+    }
+  },
+  "packageDetail": {
+    "overview": "概要",
+    "destinations": "目的地",
+    "highlights": "ハイライト",
+    "itinerary": "日程表",
+    "importantInfo": "重要な情報",
+    "importantNote": "重要：",
+    "included": "含まれるもの",
+    "excluded": "含まれないもの",
+    "readyToBook": "この冒険を予約する準備はできましたか",
+    "readyToExperience": "この冒険を体験する準備はできましたか",
+    "confirmAvailability": "今すぐ予約すると、24時間以内に空き状況を確認します",
+    "daysSafari": "{days}日間サファリ"
+  },
+  "contact": {
+    "title": "Brookshores Safarisへのお問い合わせ",
+    "description": "WhatsAppで迅速なサポートを受けるか、フォームからメッセージを送信してください。",
+    "officeInfo": "オフィス情報",
+    "chatWhatsApp": "WhatsAppでチャット →",
+    "map": "地図"
+  },
+  "whatsapp": {
+    "chatButton": "WhatsAppでチャット",
+    "chatButtonShort": "WhatsApp",
+    "defaultMessage": "こんにちは、Brookshores Safaris！ケニア旅行の計画についてお問い合わせしたいです。"
+  },
+  "tourPackages": {
+    "masai-mara-lake-nakuru-6-day": {
+      "title": "6日間 - マサイマラとナクル湖",
+      "tagline": "ビッグ5と壮大なヌーの大移動",
+      "description": "ナイロビ発着の6日間のケニア冒険をお楽しみください。ビッグ5で有名なマサイマラから旅が始まります。少なくとも4種類の素晴らしい動物を観察し、適切な時期にはヌーの大移動を目撃できます。その後、ナクル湖でサイとバードウォッチングをお楽しみください。"
+    },
+    "ol-pejeta-lake-naivasha-4-day": {
+      "title": "4日間 - オルペジェタとナイバシャ湖",
+      "tagline": "ビッグファイブ観察と湖のアクティビティ",
+      "description": "オルペジェタ保護区とナイバシャ湖を訪れます。オルペジェタはビッグファイブの生息地であり、ナイバシャ湖ではボートライドやハイキングなどのユニークなアクティビティを楽しめます。クレセント島でキリン、バッファロー、ガゼルと一緒に歩きましょう。"
+    },
+    "kenya-grand-tour-11-day": {
+      "title": "11日間 - ケニアグランドサファリ",
+      "tagline": "6つの象徴的な目的地を巡る究極のケニアサファリ",
+      "description": "ケニアで最も人気のある6つの目的地を巡ります - サンブル保護区、オルペジェタ、ナクル湖、マサイマラ、ナイバシャ湖、アンボセリ。経験豊富なドライバーガイドと共に、一生の思い出となる旅をお約束します！"
+    },
+    "masai-mara-fly-in-4-day": {
+      "title": "4日間（フライイン）- マサイマラ",
+      "tagline": "長距離移動なしのフライインサファリ",
+      "description": "マサイマラへのフライインサファリは、往復フライト付きの没入型野生動物体験を提供します。ビッグ5を観察し、シーズン中にはヌーの大移動をご覧いただけます。長距離移動なしで忘れられないサファリを求める方に最適です。"
+    },
+    "ol-pejeta-nakuru-naivasha-mara-7-day": {
+      "title": "7日間 - 中央ケニアサファリ",
+      "tagline": "ケニアで最も人気のある4つの目的地",
+      "description": "ケニアで最も人気のある4つの目的地を巡ります - オルペジェタ、ナクル湖、ナイバシャ湖、マサイマラ。ナイロビ発着のツアーです。経験豊富なドライバーガイドと共に、一生の思い出となる旅をお約束します！"
+    }
+  }
+}

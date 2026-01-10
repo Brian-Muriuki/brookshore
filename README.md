@@ -1,4 +1,4 @@
-Brookshore Safaris website built with [Next.js](https://nextjs.org) + Tailwind.
+Brookshores Safaris website built with [Next.js](https://nextjs.org) + Tailwind.
 
 ## Getting Started
 
@@ -28,9 +28,8 @@ Notes:
 
 ## Pages
 
-- `/` homepage
-- `/tours` listings + filter UI
-- `/tours/[slug]` tour details (decision stack + sticky mobile CTA)
+- `/` homepage with safari packages
+- `/packages/[slug]` package details with itinerary + booking form
 - `/corporate` corporate landing + proposal request form
 - `/about` about + FAQ
 - `/contact` contact + inquiry form

@@ -775,7 +775,7 @@ _______________________________________________
 Fill in the template structure:
 
 ```
-Hi! I just built a Kenya wishlist on Brookshore Safaris.
+Hi! I just built a Kenya wishlist on Brookshores Safaris.
 
 Trip: "[TRIP_NAME]"
 Ref: #[AUTO_GENERATED_REF]

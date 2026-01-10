@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const GOOGLE_SHEET_URL =
-  "https://script.google.com/macros/s/AKfycbycoa0-HlKRIkoyumzORNuhWwUVBMsFQilr8PeZohS6oQGoA9gRKaVOgg2L7dn0vhuq9g/exec";
+  "https://script.google.com/macros/s/AKfycbw9EVlcAF1-d6wkrBRw1d-SwSWpCkiKa0y5CqrEXzOT3S7I4VnwHrsC6cc1mBsiDtbn/exec";
 
 type WishlistPayload = {
   variant: "wishlist";
@@ -22,6 +22,23 @@ type WishlistPayload = {
   estimate?: { from: number; to: number; currency: string };
 };
 
+type PackageBookingPayload = {
+  variant: "package-booking";
+  tripRef: string;
+  packageId: string;
+  packageTitle: string;
+  name: string;
+  email: string;
+  phone: string;
+  startDate: string;
+  endDate: string;
+  adults: number;
+  kids: number;
+  airportTransfers: boolean;
+  accommodationTier: string;
+  notes?: string;
+};
+
 type LegacyPayload = {
   variant?: "tour" | "corporate" | "contact" | "newsletter";
   subject?: string;
@@ -36,7 +53,7 @@ type LegacyPayload = {
   page?: string;
 };
 
-type LeadPayload = WishlistPayload | LegacyPayload;
+type LeadPayload = WishlistPayload | PackageBookingPayload | LegacyPayload;
 
 async function sendToGoogleSheet(data: Record<string, unknown>) {
   try {
@@ -115,14 +132,75 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  // Handle legacy form submissions (corporate, contact, etc.)
-  console.log("Lead received:", {
-    variant: (payload as LegacyPayload)?.variant || "contact",
-    email,
-    name: payload?.name,
-    phone: payload?.phone,
-  });
+  // Handle package booking submissions
+  if (payload && "variant" in payload && payload.variant === "package-booking") {
+    const bookingData = payload as PackageBookingPayload;
 
+    // Calculate trip days from dates
+    const startDate = new Date(bookingData.startDate);
+    const endDate = new Date(bookingData.endDate);
+    const tripDays = Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) + 1;
+
+    const sheetData = {
+      timestamp: new Date().toISOString(),
+      tripReference: bookingData.tripRef,
+      tripName: bookingData.packageTitle,
+      name: bookingData.name,
+      email: bookingData.email,
+      phone: bookingData.phone,
+      // Old fields - leave empty for package bookings
+      travelMonth: "",
+      groupSize: "",
+      notes: bookingData.notes || "",
+      budgetPreference: "",
+      accommodationTier: bookingData.accommodationTier,
+      isResident: "",
+      tripDays: tripDays,
+      startingCity: "",
+      experiences: "",
+      estimateFrom: "",
+      estimateTo: "",
+      currency: "",
+      // New fields for package bookings
+      startDate: bookingData.startDate,
+      endDate: bookingData.endDate,
+      adults: bookingData.adults,
+      kids: bookingData.kids,
+      airportTransfers: bookingData.airportTransfers ? "Yes" : "No",
+    };
+
+    const success = await sendToGoogleSheet(sheetData);
+
+    if (!success) {
+      console.error("Failed to save package booking to Google Sheet:", sheetData);
+    }
+
+    console.log("Package booking received:", sheetData);
+    return NextResponse.json({ ok: true });
+  }
+
+  // Handle legacy form submissions (corporate, contact, tour)
+  const legacyData = payload as LegacyPayload;
+
+  const sheetData = {
+    variant: legacyData.variant || "contact",
+    name: legacyData.name || "",
+    email: legacyData.email || "",
+    phone: legacyData.phone || "",
+    company: legacyData.company || "",
+    dates: legacyData.dates || "",
+    groupSize: legacyData.groupSize || "",
+    budgetRange: legacyData.budgetRange || "",
+    message: legacyData.message || "",
+  };
+
+  const success = await sendToGoogleSheet(sheetData);
+
+  if (!success) {
+    console.error("Failed to save lead to Google Sheet:", sheetData);
+  }
+
+  console.log("Lead received:", sheetData);
   return NextResponse.json({ ok: true });
 }
 

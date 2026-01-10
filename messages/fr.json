@@ -1,0 +1,174 @@
+{
+  "common": {
+    "viewPackages": "Voir les forfaits",
+    "bookNow": "Réserver maintenant",
+    "talkToExpert": "Parler à un expert",
+    "learnMore": "En savoir plus",
+    "viewItinerary": "Voir l'itinéraire",
+    "days": "Jours",
+    "day": "Jour",
+    "adults": "Adultes",
+    "kids": "Enfants",
+    "kidsAge": "Enfants (moins de 12 ans)",
+    "close": "Fermer",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "required": "requis"
+  },
+  "nav": {
+    "corporate": "Entreprises",
+    "about": "À propos",
+    "contact": "Contact",
+    "packages": "Forfaits Safari"
+  },
+  "hero": {
+    "badge": "Experts de confiance en safari au Kenya",
+    "title": "Des safaris inoubliables au Kenya avec des itinéraires conçus par des experts",
+    "description": "Découvrez nos forfaits safari sélectionnés avec les Big 5, la Grande Migration et les destinations les plus emblématiques du Kenya. Chaque détail est planifié pour que vous puissiez vous concentrer sur l'aventure.",
+    "trustBadge1": "Itinéraires détaillés jour par jour",
+    "trustBadge2": "Aucun paiement pour se renseigner",
+    "trustBadge3": "Support WhatsApp 24h/24"
+  },
+  "packages": {
+    "eyebrow": "Nos forfaits",
+    "title": "Aventures safari au Kenya soigneusement sélectionnées",
+    "description": "Explorez nos forfaits safari artisanaux avec des itinéraires détaillés jour par jour. Chaque forfait est conçu pour vous offrir l'expérience ultime du Kenya."
+  },
+  "whyUs": {
+    "eyebrow": "Pourquoi Brookshores",
+    "title": "Nous gérons la logistique, vous profitez de l'aventure",
+    "description": "Du moment où vous réservez jusqu'à votre retour, nous avons chaque détail couvert.",
+    "item1Title": "Itinéraires détaillés",
+    "item1Desc": "Sachez exactement à quoi vous attendre chaque jour de votre aventure safari.",
+    "item2Title": "Guides experts",
+    "item2Desc": "Des guides-chauffeurs expérimentés qui connaissent les parcs du Kenya sur le bout des doigts.",
+    "item3Title": "Hébergements de qualité",
+    "item3Desc": "Hébergements triés sur le volet, du budget au luxe.",
+    "item4Title": "Support 24h/24",
+    "item4Desc": "Support WhatsApp avant et pendant votre voyage."
+  },
+  "destinations": {
+    "eyebrow": "Destinations populaires",
+    "title": "Où souhaitez-vous aller?",
+    "description": "Le Kenya offre une diversité incroyable. Du célèbre Masai Mara aux lacs sereins de la Vallée du Rift.",
+    "masaiMara": "Masai Mara",
+    "masaiMaraDesc": "Big 5 et Migration",
+    "amboseli": "Amboseli",
+    "amboseliDesc": "Éléphants et Kilimandjaro",
+    "samburu": "Samburu",
+    "samburuDesc": "Les 5 Spéciaux",
+    "lakeNakuru": "Lac Nakuru",
+    "lakeNakuruDesc": "Rhinocéros et flamants"
+  },
+  "testimonials": {
+    "eyebrow": "Témoignages",
+    "title": "Ce que disent les voyageurs",
+    "description": "Quelques mots de nos clients et des équipes d'entreprise que nous avons accompagnés."
+  },
+  "newsletter": {
+    "eyebrow": "Newsletter",
+    "title": "Recevez des offres et de nouvelles expériences",
+    "description": "Restez informé des offres pour résidents, des forfaits week-end de dernière minute et des safaris saisonniers.",
+    "placeholder": "Entrez votre email",
+    "button": "S'abonner"
+  },
+  "footer": {
+    "tagline": "Forfaits safari, escapades à la plage, week-ends et solutions de voyage d'entreprise à travers le Kenya — conçus pour les résidents et les visiteurs internationaux.",
+    "quickLinks": "Liens rapides",
+    "contact": "Contact",
+    "location": "Nairobi, Kenya",
+    "copyright": "© {year} Brookshores Safaris."
+  },
+  "booking": {
+    "title": "Réserver ce forfait",
+    "subtitle": "Remplissez vos coordonnées et nous confirmerons la disponibilité.",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "whatsapp": "Numéro WhatsApp",
+    "whatsappPlaceholder": "+33 X XX XX XX XX",
+    "email": "Email",
+    "emailPlaceholder": "vous@exemple.fr",
+    "travelDates": "Dates de voyage",
+    "travelDatesNote": "C'est un forfait de {days} jours",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "travelers": "Voyageurs",
+    "airportTransfers": "Inclure les transferts aéroport",
+    "airportTransfersDesc": "Nous vous récupérons à l'aéroport à votre arrivée au Kenya",
+    "accommodation": "Style d'hébergement",
+    "accommodation3Star": "3 étoiles (Budget)",
+    "accommodation3StarDesc": "Camps basiques, installations partagées",
+    "accommodation4Star": "4 étoiles (Intermédiaire)",
+    "accommodation4StarDesc": "Lodges confortables, chambres avec salle de bain",
+    "accommodation5Star": "5 étoiles (Confort)",
+    "accommodation5StarDesc": "Lodges de qualité, excellentes commodités",
+    "specialRequests": "Demandes spéciales (optionnel)",
+    "specialRequestsPlaceholder": "Besoins alimentaires, occasions spéciales, accessibilité...",
+    "submitButton": "Réserver - Obtenir un devis",
+    "trustNote1": "Aucun paiement requis pour se renseigner",
+    "trustNote2": "Annulation gratuite jusqu'à 30 jours avant",
+    "trustNote3": "Support WhatsApp 24h/24",
+    "errors": {
+      "nameRequired": "Le nom est requis",
+      "phoneRequired": "Le numéro WhatsApp est requis",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "Veuillez entrer un email valide",
+      "dateRequired": "Veuillez sélectionner vos dates de voyage",
+      "adultsRequired": "Au moins 1 adulte est requis",
+      "submitError": "Une erreur s'est produite. Veuillez réessayer."
+    }
+  },
+  "packageDetail": {
+    "overview": "Aperçu",
+    "destinations": "Destinations",
+    "highlights": "Points forts",
+    "itinerary": "Itinéraire jour par jour",
+    "importantInfo": "Informations importantes",
+    "importantNote": "Note importante:",
+    "included": "Ce qui est inclus",
+    "excluded": "Ce qui n'est pas inclus",
+    "readyToBook": "Prêt à réserver cette aventure?",
+    "readyToExperience": "Prêt à vivre cette aventure?",
+    "confirmAvailability": "Réservez maintenant et nous confirmerons la disponibilité sous 24 heures",
+    "daysSafari": "Safari de {days} jours"
+  },
+  "contact": {
+    "title": "Contactez Brookshores Safaris",
+    "description": "Utilisez WhatsApp pour une aide rapide, ou envoyez un message via le formulaire.",
+    "officeInfo": "Informations bureau",
+    "chatWhatsApp": "Discuter sur WhatsApp →",
+    "map": "Carte"
+  },
+  "whatsapp": {
+    "chatButton": "Discuter sur WhatsApp",
+    "chatButtonShort": "WhatsApp",
+    "defaultMessage": "Bonjour Brookshores Safaris! J'aimerais de l'aide pour planifier un voyage au Kenya."
+  },
+  "tourPackages": {
+    "masai-mara-lake-nakuru-6-day": {
+      "title": "6 Jours - Masai Mara et Lac Nakuru",
+      "tagline": "Les Big 5 et l'incroyable migration des gnous",
+      "description": "Démarrez une aventure de 6 jours à travers le Kenya, commençant et se terminant à Nairobi. Votre voyage commence au Masai Mara, célèbre pour ses Big 5. Vous verrez au moins 4 de ces créatures incroyables et la migration des gnous. Continuez vers le Lac Nakuru pour observer les rhinocéros et les oiseaux."
+    },
+    "ol-pejeta-lake-naivasha-4-day": {
+      "title": "4 Jours - Ol Pejeta et Lac Naivasha",
+      "tagline": "Observation des Big Five et activités lacustres",
+      "description": "Visitez la Réserve Ol Pejeta et le Lac Naivasha. Ol Pejeta abrite les 'Big Five' tandis que le Lac Naivasha offre des activités uniques comme les promenades en bateau et la randonnée. Marchez aux côtés des girafes, buffles et gazelles sur Crescent Island."
+    },
+    "kenya-grand-tour-11-day": {
+      "title": "11 Jours - Grand Safari du Kenya",
+      "tagline": "Le safari ultime couvrant 6 destinations emblématiques",
+      "description": "Découvrez les 6 destinations les plus populaires du Kenya - Réserve Samburu, Ol Pejeta, Lac Nakuru, Masai Mara, Lac Naivasha et Amboseli. Avec nos guides expérimentés, ce sera le voyage de votre vie!"
+    },
+    "masai-mara-fly-in-4-day": {
+      "title": "4 Jours (Vol) - Masai Mara",
+      "tagline": "Safari en avion sans longs transferts",
+      "description": "Ce safari en avion au Masai Mara offre une expérience immersive avec vols aller-retour. Observez les Big 5 et, en saison, la Migration des Gnous. Parfait pour ceux qui recherchent un safari inoubliable sans longs trajets."
+    },
+    "ol-pejeta-nakuru-naivasha-mara-7-day": {
+      "title": "7 Jours - Safari Kenya Central",
+      "tagline": "Les 4 destinations les plus populaires du Kenya",
+      "description": "Découvrez les 4 destinations les plus populaires du Kenya - Ol Pejeta, Lac Nakuru, Lac Naivasha et Masai Mara. Le circuit commence et se termine à Nairobi. Avec nos guides expérimentés, ce sera le voyage de votre vie!"
+    }
+  }
+}

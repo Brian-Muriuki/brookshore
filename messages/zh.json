@@ -1,0 +1,174 @@
+{
+  "common": {
+    "viewPackages": "查看套餐",
+    "bookNow": "立即预订",
+    "talkToExpert": "咨询专家",
+    "learnMore": "了解更多",
+    "viewItinerary": "查看行程",
+    "days": "天",
+    "day": "天",
+    "adults": "成人",
+    "kids": "儿童",
+    "kidsAge": "儿童（12岁以下）",
+    "close": "关闭",
+    "send": "发送",
+    "sending": "发送中...",
+    "required": "必填"
+  },
+  "nav": {
+    "corporate": "企业服务",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "packages": "Safari套餐"
+  },
+  "hero": {
+    "badge": "肯尼亚Safari专家",
+    "title": "专家设计的难忘肯尼亚Safari之旅",
+    "description": "探索我们精心策划的Safari套餐，体验非洲五大动物、角马大迁徙和肯尼亚最具标志性的目的地。每个细节都已为您规划好，让您专注于冒险体验。",
+    "trustBadge1": "详细的每日行程",
+    "trustBadge2": "咨询无需付款",
+    "trustBadge3": "全天候WhatsApp支持"
+  },
+  "packages": {
+    "eyebrow": "我们的套餐",
+    "title": "精心策划的肯尼亚Safari冒险",
+    "description": "探索我们精心打造的Safari套餐，附带详细的每日行程。每个套餐都旨在为您提供终极肯尼亚体验。"
+  },
+  "whyUs": {
+    "eyebrow": "为什么选择Brookshores",
+    "title": "我们负责后勤，您享受冒险",
+    "description": "从您预订的那一刻到返程，我们都为您安排好每一个细节。",
+    "item1Title": "详细行程",
+    "item1Desc": "清楚了解Safari冒险每天的安排。",
+    "item2Title": "专业向导",
+    "item2Desc": "经验丰富的司机向导，对肯尼亚公园了如指掌。",
+    "item3Title": "优质住宿",
+    "item3Desc": "精选住宿，从经济型到豪华型。",
+    "item4Title": "全天候支持",
+    "item4Desc": "旅行前后全程WhatsApp支持。"
+  },
+  "destinations": {
+    "eyebrow": "热门目的地",
+    "title": "您想去哪里？",
+    "description": "肯尼亚拥有令人难以置信的多样性。从标志性的马赛马拉到宁静的东非大裂谷湖泊。",
+    "masaiMara": "马赛马拉",
+    "masaiMaraDesc": "五大动物与大迁徙",
+    "amboseli": "安博塞利",
+    "amboseliDesc": "大象与乞力马扎罗山",
+    "samburu": "桑布鲁",
+    "samburuDesc": "特有五大动物",
+    "lakeNakuru": "纳库鲁湖",
+    "lakeNakuruDesc": "犀牛与火烈鸟"
+  },
+  "testimonials": {
+    "eyebrow": "客户评价",
+    "title": "旅行者的话",
+    "description": "来自我们服务过的客人和企业团队的评价。"
+  },
+  "newsletter": {
+    "eyebrow": "订阅",
+    "title": "获取优惠和新体验",
+    "description": "及时了解居民优惠、最后时刻周末套餐和季节性Safari。",
+    "placeholder": "输入您的邮箱",
+    "button": "订阅"
+  },
+  "footer": {
+    "tagline": "Safari套餐、海滩度假、周末游和企业旅行解决方案——为居民和国际游客精心设计。",
+    "quickLinks": "快速链接",
+    "contact": "联系方式",
+    "location": "肯尼亚，内罗毕",
+    "copyright": "© {year} Brookshores Safaris。"
+  },
+  "booking": {
+    "title": "预订此套餐",
+    "subtitle": "填写您的详细信息，我们将确认可用性。",
+    "name": "姓名",
+    "namePlaceholder": "您的姓名",
+    "whatsapp": "WhatsApp号码",
+    "whatsappPlaceholder": "+86 XXX XXXX XXXX",
+    "email": "邮箱",
+    "emailPlaceholder": "you@example.com",
+    "travelDates": "旅行日期",
+    "travelDatesNote": "这是一个{days}天的套餐",
+    "startDate": "开始日期",
+    "endDate": "结束日期",
+    "travelers": "旅行者",
+    "airportTransfers": "包含机场接送",
+    "airportTransfersDesc": "我们将在您抵达肯尼亚时到机场接您",
+    "accommodation": "住宿风格",
+    "accommodation3Star": "三星级（经济型）",
+    "accommodation3StarDesc": "基础营地，共享设施",
+    "accommodation4Star": "四星级（中档）",
+    "accommodation4StarDesc": "舒适旅馆，独立卫浴",
+    "accommodation5Star": "五星级（舒适型）",
+    "accommodation5StarDesc": "优质旅馆，完善设施",
+    "specialRequests": "特殊要求（可选）",
+    "specialRequestsPlaceholder": "饮食需求、特殊场合、无障碍需求...",
+    "submitButton": "预订 - 获取报价",
+    "trustNote1": "咨询无需付款",
+    "trustNote2": "30天前免费取消",
+    "trustNote3": "全天候WhatsApp支持",
+    "errors": {
+      "nameRequired": "姓名为必填项",
+      "phoneRequired": "WhatsApp号码为必填项",
+      "emailRequired": "邮箱为必填项",
+      "emailInvalid": "请输入有效的邮箱地址",
+      "dateRequired": "请选择您的旅行日期",
+      "adultsRequired": "至少需要1位成人",
+      "submitError": "发生错误，请重试。"
+    }
+  },
+  "packageDetail": {
+    "overview": "概览",
+    "destinations": "目的地",
+    "highlights": "亮点",
+    "itinerary": "每日行程",
+    "importantInfo": "重要信息",
+    "importantNote": "重要提示：",
+    "included": "包含项目",
+    "excluded": "不包含项目",
+    "readyToBook": "准备好预订这次冒险了吗",
+    "readyToExperience": "准备好体验这次冒险了吗",
+    "confirmAvailability": "立即预订，我们将在24小时内确认可用性",
+    "daysSafari": "{days}天Safari"
+  },
+  "contact": {
+    "title": "联系Brookshores Safaris",
+    "description": "使用WhatsApp获取快速帮助，或通过表单发送消息。",
+    "officeInfo": "办公室信息",
+    "chatWhatsApp": "WhatsApp聊天 →",
+    "map": "地图"
+  },
+  "whatsapp": {
+    "chatButton": "WhatsApp聊天",
+    "chatButtonShort": "WhatsApp",
+    "defaultMessage": "您好Brookshores Safaris！我想咨询肯尼亚旅行规划。"
+  },
+  "tourPackages": {
+    "masai-mara-lake-nakuru-6-day": {
+      "title": "6天 - 马赛马拉和纳库鲁湖",
+      "tagline": "五大动物和令人惊叹的角马大迁徙",
+      "description": "开启一场激动人心的6天肯尼亚冒险之旅，从内罗毕出发并返回。您的旅程始于以五大动物闻名的马赛马拉。您将至少看到4种这些神奇的动物，并在合适的季节见证壮观的角马大迁徙。接下来前往纳库鲁湖观赏犀牛和鸟类。"
+    },
+    "ol-pejeta-lake-naivasha-4-day": {
+      "title": "4天 - 奥佩杰塔和奈瓦沙湖",
+      "tagline": "五大动物观赏和湖区活动",
+      "description": "参观奥佩杰塔保护区和奈瓦沙湖。奥佩杰塔是五大动物的家园，而奈瓦沙湖则提供独特的活动如乘船游览和徒步。在新月岛与长颈鹿、水牛和瞪羚同行。"
+    },
+    "kenya-grand-tour-11-day": {
+      "title": "11天 - 肯尼亚大环游",
+      "tagline": "涵盖6个标志性目的地的终极肯尼亚Safari",
+      "description": "游览肯尼亚最受欢迎的6个目的地 - 桑布鲁保护区、奥佩杰塔保护区、纳库鲁湖、马赛马拉、奈瓦沙湖和安博塞利。在我们经验丰富的司机向导带领下，这将是一生难忘的旅程！"
+    },
+    "masai-mara-fly-in-4-day": {
+      "title": "4天（飞行）- 马赛马拉",
+      "tagline": "无需长途驾驶的飞行Safari",
+      "description": "这个马赛马拉飞行Safari提供往返航班的沉浸式野生动物体验。观赏五大动物，并在季节性观看角马大迁徙。非常适合寻求难忘Safari体验而无需长途驾驶的游客。"
+    },
+    "ol-pejeta-nakuru-naivasha-mara-7-day": {
+      "title": "7天 - 中部肯尼亚Safari",
+      "tagline": "肯尼亚最受欢迎的4个目的地",
+      "description": "游览肯尼亚最受欢迎的4个目的地 - 奥佩杰塔保护区、纳库鲁湖、奈瓦沙湖和马赛马拉。行程从内罗毕出发并返回。在我们经验丰富的司机向导带领下，这将是一生难忘的旅程！"
+    }
+  }
+}

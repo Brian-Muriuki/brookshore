@@ -51,7 +51,7 @@ export function generateWhatsAppMessage(data: {
     accommodationTier.charAt(0).toUpperCase() + accommodationTier.slice(1);
 
   const parts = [
-    `Hi! I just built a Kenya wishlist on Brookshore Safaris.`,
+    `Hi! I just built a Kenya wishlist on Brookshores Safaris.`,
     ``,
     `Trip: "${tripName || "My Kenya Adventure"}"`,
     `Ref: #${tripRef}`,
@@ -85,6 +85,6 @@ export function generateWhatsAppUrl(
 }
 
 /**
- * Default WhatsApp number for Brookshore Safaris
+ * Default WhatsApp number for Brookshores Safaris
  */
 export const WHATSAPP_NUMBER = "254719551922";

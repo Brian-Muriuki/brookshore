@@ -2,7 +2,7 @@
 
 ## Overview
 
-Transform the existing Brookshore Safaris website from a traditional tour listing site into an **experience-based wishlist builder** where users collect moments, not itineraries.
+Transform the existing Brookshores Safaris website from a traditional tour listing site into an **experience-based wishlist builder** where users collect moments, not itineraries.
 
 ---
 
@@ -676,7 +676,7 @@ POST /api/whatsapp-message
 
 **Generated Message Format**:
 ```
-Hi! I just built a Kenya wishlist on Brookshore Safaris.
+Hi! I just built a Kenya wishlist on Brookshores Safaris.
 
 Trip: "Amina's Safari & Beach Escape"
 Ref: #TRIP-2024-ABC123

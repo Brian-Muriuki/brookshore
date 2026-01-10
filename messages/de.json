@@ -1,0 +1,174 @@
+{
+  "common": {
+    "viewPackages": "Pakete ansehen",
+    "bookNow": "Jetzt buchen",
+    "talkToExpert": "Mit einem Experten sprechen",
+    "learnMore": "Mehr erfahren",
+    "viewItinerary": "Reiseroute ansehen",
+    "days": "Tage",
+    "day": "Tag",
+    "adults": "Erwachsene",
+    "kids": "Kinder",
+    "kidsAge": "Kinder (unter 12)",
+    "close": "Schließen",
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "required": "erforderlich"
+  },
+  "nav": {
+    "corporate": "Unternehmen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "packages": "Safari-Pakete"
+  },
+  "hero": {
+    "badge": "Vertrauenswürdige Kenia-Safari-Experten",
+    "title": "Unvergessliche Kenia-Safaris mit fachkundig erstellten Reiserouten",
+    "description": "Entdecken Sie unsere kuratierten Safari-Pakete mit den Big 5, der Großen Migration und Kenias berühmtesten Reisezielen. Jedes Detail geplant, damit Sie sich auf das Abenteuer konzentrieren können.",
+    "trustBadge1": "Detaillierte Tagesreisepläne",
+    "trustBadge2": "Keine Zahlung für Anfragen",
+    "trustBadge3": "24/7 WhatsApp-Support"
+  },
+  "packages": {
+    "eyebrow": "Unsere Pakete",
+    "title": "Kuratierte Kenia-Safari-Abenteuer",
+    "description": "Entdecken Sie unsere handgefertigten Safari-Pakete mit detaillierten Tagesreiseplänen. Jedes Paket ist darauf ausgelegt, Ihnen das ultimative Kenia-Erlebnis zu bieten."
+  },
+  "whyUs": {
+    "eyebrow": "Warum Brookshores",
+    "title": "Wir kümmern uns um die Logistik, Sie genießen das Abenteuer",
+    "description": "Vom Moment der Buchung bis zu Ihrer Rückkehr haben wir jedes Detail im Griff.",
+    "item1Title": "Detaillierte Reisepläne",
+    "item1Desc": "Wissen Sie genau, was Sie jeden Tag Ihres Safari-Abenteuers erwartet.",
+    "item2Title": "Erfahrene Guides",
+    "item2Desc": "Erfahrene Fahrer-Guides, die Kenias Parks in- und auswendig kennen.",
+    "item3Title": "Qualitäts-Lodges",
+    "item3Desc": "Handverlesene Unterkünfte von budgetfreundlich bis luxuriös.",
+    "item4Title": "24/7 Support",
+    "item4Desc": "WhatsApp-Support vor und während Ihrer Reise."
+  },
+  "destinations": {
+    "eyebrow": "Beliebte Reiseziele",
+    "title": "Wohin möchten Sie reisen?",
+    "description": "Kenia bietet unglaubliche Vielfalt. Von der ikonischen Masai Mara bis zu den ruhigen Seen des Rift Valley.",
+    "masaiMara": "Masai Mara",
+    "masaiMaraDesc": "Big 5 & Migration",
+    "amboseli": "Amboseli",
+    "amboseliDesc": "Elefanten & Kilimandscharo",
+    "samburu": "Samburu",
+    "samburuDesc": "Special 5 Wildtiere",
+    "lakeNakuru": "Nakuru-See",
+    "lakeNakuruDesc": "Nashörner & Flamingos"
+  },
+  "testimonials": {
+    "eyebrow": "Bewertungen",
+    "title": "Was Reisende sagen",
+    "description": "Ein paar Worte von Gästen und Unternehmensteams, die wir unterstützt haben."
+  },
+  "newsletter": {
+    "eyebrow": "Newsletter",
+    "title": "Angebote und neue Erlebnisse erhalten",
+    "description": "Bleiben Sie über Einwohnerangebote, Last-Minute-Wochenendpakete und saisonale Safaris informiert.",
+    "placeholder": "E-Mail eingeben",
+    "button": "Abonnieren"
+  },
+  "footer": {
+    "tagline": "Safari-Pakete, Strandurlaube, Wochenendausflüge und Geschäftsreisen in ganz Kenia — für Einwohner und internationale Gäste konzipiert.",
+    "quickLinks": "Schnelllinks",
+    "contact": "Kontakt",
+    "location": "Nairobi, Kenia",
+    "copyright": "© {year} Brookshores Safaris."
+  },
+  "booking": {
+    "title": "Dieses Paket buchen",
+    "subtitle": "Füllen Sie Ihre Daten aus und wir bestätigen die Verfügbarkeit.",
+    "name": "Name",
+    "namePlaceholder": "Ihr Name",
+    "whatsapp": "WhatsApp-Nummer",
+    "whatsappPlaceholder": "+49 XXX XXXXXXX",
+    "email": "E-Mail",
+    "emailPlaceholder": "sie@beispiel.de",
+    "travelDates": "Reisedaten",
+    "travelDatesNote": "Dies ist ein {days}-tägiges Paket",
+    "startDate": "Startdatum",
+    "endDate": "Enddatum",
+    "travelers": "Reisende",
+    "airportTransfers": "Flughafentransfers einschließen",
+    "airportTransfersDesc": "Wir holen Sie am Flughafen ab, wenn Sie in Kenia landen",
+    "accommodation": "Unterkunftsstil",
+    "accommodation3Star": "3-Sterne (Budget)",
+    "accommodation3StarDesc": "Einfache Camps, Gemeinschaftseinrichtungen",
+    "accommodation4Star": "4-Sterne (Mittelklasse)",
+    "accommodation4StarDesc": "Komfortable Lodges, eigenes Bad",
+    "accommodation5Star": "5-Sterne (Komfort)",
+    "accommodation5StarDesc": "Qualitäts-Lodges, ausgezeichnete Ausstattung",
+    "specialRequests": "Besondere Wünsche (optional)",
+    "specialRequestsPlaceholder": "Ernährungsbedürfnisse, besondere Anlässe, Barrierefreiheit...",
+    "submitButton": "Jetzt buchen - Angebot erhalten",
+    "trustNote1": "Keine Zahlung für Anfragen erforderlich",
+    "trustNote2": "Kostenlose Stornierung bis 30 Tage vorher",
+    "trustNote3": "24/7 WhatsApp-Support",
+    "errors": {
+      "nameRequired": "Name ist erforderlich",
+      "phoneRequired": "WhatsApp-Nummer ist erforderlich",
+      "emailRequired": "E-Mail ist erforderlich",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail ein",
+      "dateRequired": "Bitte wählen Sie Ihre Reisedaten",
+      "adultsRequired": "Mindestens 1 Erwachsener ist erforderlich",
+      "submitError": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+    }
+  },
+  "packageDetail": {
+    "overview": "Überblick",
+    "destinations": "Reiseziele",
+    "highlights": "Highlights",
+    "itinerary": "Tag-für-Tag-Reiseplan",
+    "importantInfo": "Wichtige Informationen",
+    "importantNote": "Wichtiger Hinweis:",
+    "included": "Inklusive",
+    "excluded": "Nicht inklusive",
+    "readyToBook": "Bereit, dieses Abenteuer zu buchen?",
+    "readyToExperience": "Bereit, dieses Abenteuer zu erleben?",
+    "confirmAvailability": "Buchen Sie jetzt und wir bestätigen die Verfügbarkeit innerhalb von 24 Stunden",
+    "daysSafari": "{days} Tage Safari"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie Brookshores Safaris",
+    "description": "Nutzen Sie WhatsApp für schnelle Hilfe oder senden Sie eine Nachricht über das Formular.",
+    "officeInfo": "Büroinformationen",
+    "chatWhatsApp": "Auf WhatsApp chatten →",
+    "map": "Karte"
+  },
+  "whatsapp": {
+    "chatButton": "Auf WhatsApp chatten",
+    "chatButtonShort": "WhatsApp",
+    "defaultMessage": "Hallo Brookshores Safaris! Ich möchte Hilfe bei der Planung einer Reise in Kenia."
+  },
+  "tourPackages": {
+    "masai-mara-lake-nakuru-6-day": {
+      "title": "6 Tage - Masai Mara und Lake Nakuru",
+      "tagline": "Big 5 Wildtiere und die unglaubliche Gnuwanderung",
+      "description": "Starten Sie ein aufregendes 6-tägiges Abenteuer durch Kenia, beginnend und endend in Nairobi. Ihre Reise beginnt in der Masai Mara, berühmt für ihre Big 5 Tiere. Erleben Sie mindestens 4 dieser erstaunlichen Kreaturen und die unglaubliche Gnuwanderung. Weiter geht es zum Lake Nakuru, um Nashörner zu beobachten und Vogelbeobachtung zu genießen."
+    },
+    "ol-pejeta-lake-naivasha-4-day": {
+      "title": "4 Tage - Ol Pejeta und Lake Naivasha",
+      "tagline": "Big Five Beobachtung und malerische Seeaktivitäten",
+      "description": "Besuchen Sie das Ol Pejeta Conservancy und den Lake Naivasha. Ol Pejeta beherbergt die 'Big Five' Tiere, während der Lake Naivasha einzigartige Aktivitäten wie Bootsfahrten und Wanderungen bietet. Spazieren Sie neben Giraffen, Büffeln und Gazellen auf Crescent Island."
+    },
+    "kenya-grand-tour-11-day": {
+      "title": "11 Tage - Große Kenia Safari",
+      "tagline": "Die ultimative Kenia-Safari mit 6 legendären Reisezielen",
+      "description": "Erleben Sie die 6 beliebtesten Reiseziele Kenias - Samburu Reservat, Ol Pejeta Conservancy, Lake Nakuru, Masai Mara, Lake Naivasha & Amboseli. Mit unseren erfahrenen Fahrerguides wird es die Reise Ihres Lebens!"
+    },
+    "masai-mara-fly-in-4-day": {
+      "title": "4 Tage (Flug) - Masai Mara",
+      "tagline": "Intensive Flugsafari ohne lange Fahrten",
+      "description": "Diese Flugsafari in die Masai Mara bietet ein intensives Wildtiererlebnis mit Hin- und Rückflug. Erleben Sie die Big 5 und saisonal die legendäre Gnuwanderung. Perfekt für alle, die ein unvergessliches Safari-Erlebnis ohne lange Fahrten suchen."
+    },
+    "ol-pejeta-nakuru-naivasha-mara-7-day": {
+      "title": "7 Tage - Zentral-Kenia Safari",
+      "tagline": "Die 4 beliebtesten Reiseziele in Kenia",
+      "description": "Erleben Sie die 4 beliebtesten Reiseziele Kenias - Ol Pejeta Conservancy, Lake Nakuru, Lake Naivasha & Masai Mara. Die Tour startet und endet in Nairobi. Mit unseren erfahrenen Fahrerguides wird es die Reise Ihres Lebens!"
+    }
+  }
+}

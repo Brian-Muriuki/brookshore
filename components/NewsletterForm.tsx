@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
 }
 
 export default function NewsletterForm() {
+  const t = useTranslations("newsletter");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">(
     "idle",
@@ -56,7 +58,7 @@ export default function NewsletterForm() {
   if (status === "success") {
     return (
       <div className="rounded-2xl border border-border bg-background px-4 py-4 text-sm">
-        <div className="font-semibold">You’re subscribed</div>
+        <div className="font-semibold">You&apos;re subscribed</div>
         <div className="mt-1 text-[color-mix(in_oklab,var(--foreground)_70%,transparent)]">
           Watch your inbox for deals and new itineraries.
         </div>
@@ -70,7 +72,7 @@ export default function NewsletterForm() {
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="you@example.com"
+        placeholder={t("placeholder")}
         className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-brand/35"
       />
       <button
@@ -78,7 +80,7 @@ export default function NewsletterForm() {
         disabled={status === "submitting"}
         className="rounded-xl bg-brand px-5 py-3 text-sm font-semibold text-brand-foreground transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70"
       >
-        {status === "submitting" ? "Subscribing…" : "Subscribe"}
+        {status === "submitting" ? "..." : t("button")}
       </button>
       {status === "error" && error ? (
         <div className="text-xs font-semibold text-red-600 sm:col-span-2">
@@ -88,4 +90,3 @@ export default function NewsletterForm() {
     </form>
   );
 }
-

@@ -1,5 +1,5 @@
 #### Feedback 1
-This is a solid, professional plan. It moves "Brookshore Safaris" from a generic tour site to a modern digital product.
+This is a solid, professional plan. It moves "Brookshores Safaris" from a generic tour site to a modern digital product.
 
 Here is the technical validation of your plan (Mobile, SEO, CTA) and the solution for the **Corporate Integration**.
 
@@ -297,7 +297,7 @@ The flow is psychologically sound:
 
 ## 🚀 **Final Verdict & Next Steps**
 
-**This plan is approved and ready for development.** It is a sophisticated, user-centric redesign that will set Brookshore Safaris apart.
+**This plan is approved and ready for development.** It is a sophisticated, user-centric redesign that will set Brookshores Safaris apart.
 
 **Immediate Next Actions:**
 1.  **Start Coding:** I will begin with **Phase 1: Data & State Foundation** as outlined.

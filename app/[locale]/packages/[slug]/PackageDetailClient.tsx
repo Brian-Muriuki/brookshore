@@ -111,6 +111,86 @@ export default function PackageDetailClient({ package: pkg }: PackageDetailClien
           </ul>
         </section>
 
+        {/* Excursions */}
+        {(pkg.excursions.enRoute.length > 0 || pkg.excursions.atDestination.length > 0) && (
+          <section id="excursions">
+            <h2 className="text-xl font-semibold">{t("excursions")}</h2>
+            <p className="mt-2 text-sm text-[color-mix(in_oklab,var(--foreground)_70%,transparent)]">
+              {t("excursionsDescription")}
+            </p>
+
+            {/* En Route Excursions */}
+            {pkg.excursions.enRoute.length > 0 && (
+              <div className="mt-6">
+                <h3 className="flex items-center gap-2 text-base font-semibold text-blue-700 dark:text-blue-400">
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/50 text-xs">
+                    &#10148;
+                  </span>
+                  {t("enRouteExcursions")}
+                </h3>
+                <p className="mt-1 text-xs text-[color-mix(in_oklab,var(--foreground)_60%,transparent)]">
+                  {t("enRouteDescription")}
+                </p>
+                <div className="mt-3 space-y-3">
+                  {pkg.excursions.enRoute.map((excursion) => (
+                    <div
+                      key={excursion.name}
+                      className="rounded-xl border border-blue-200 dark:border-blue-800 bg-blue-50/50 dark:bg-blue-950/20 p-4"
+                    >
+                      <div className="flex items-start justify-between gap-2">
+                        <h4 className="font-medium text-blue-900 dark:text-blue-100">
+                          {excursion.name}
+                        </h4>
+                      </div>
+                      <p className="mt-1 text-xs text-blue-600 dark:text-blue-400">
+                        {excursion.location}
+                      </p>
+                      <p className="mt-2 text-sm text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
+                        {excursion.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* At Destination Excursions */}
+            {pkg.excursions.atDestination.length > 0 && (
+              <div className="mt-6">
+                <h3 className="flex items-center gap-2 text-base font-semibold text-emerald-700 dark:text-emerald-400">
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-xs">
+                    &#9733;
+                  </span>
+                  {t("atDestinationExcursions")}
+                </h3>
+                <p className="mt-1 text-xs text-[color-mix(in_oklab,var(--foreground)_60%,transparent)]">
+                  {t("atDestinationDescription")}
+                </p>
+                <div className="mt-3 space-y-3">
+                  {pkg.excursions.atDestination.map((excursion) => (
+                    <div
+                      key={excursion.name}
+                      className="rounded-xl border border-emerald-200 dark:border-emerald-800 bg-emerald-50/50 dark:bg-emerald-950/20 p-4"
+                    >
+                      <div className="flex items-start justify-between gap-2">
+                        <h4 className="font-medium text-emerald-900 dark:text-emerald-100">
+                          {excursion.name}
+                        </h4>
+                      </div>
+                      <p className="mt-1 text-xs text-emerald-600 dark:text-emerald-400">
+                        {excursion.location}
+                      </p>
+                      <p className="mt-2 text-sm text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
+                        {excursion.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
+
         {/* First Book Now CTA - Mobile */}
         <div className="rounded-2xl border border-brand/20 bg-brand/5 p-6 text-center lg:hidden">
           <p className="text-sm font-medium">{t("readyToBook")}?</p>

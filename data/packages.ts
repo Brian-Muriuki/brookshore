@@ -5,6 +5,17 @@ export interface ItineraryDay {
   notes?: string[];
 }
 
+export interface Excursion {
+  name: string;
+  description: string;
+  location: string;
+}
+
+export interface PackageExcursions {
+  enRoute: Excursion[];
+  atDestination: Excursion[];
+}
+
 export interface Package {
   id: string;
   slug: string;
@@ -18,6 +29,7 @@ export interface Package {
   includes: string[];
   excludes: string[];
   importantNotes: string[];
+  excursions: PackageExcursions;
   image: string;
   gallery: string[];
 }
@@ -105,6 +117,47 @@ export const packages: Package[] = [
       "Clients with back problems can consider flying directly to (and out of) Masai Mara.",
       "Morning game drives in Masai Mara can be added on the last morning at the park by paying additional park fees.",
     ],
+    excursions: {
+      enRoute: [
+        {
+          name: "Great Rift Valley Viewpoint",
+          location: "Near Limuru (Nairobi to Mara route)",
+          description: "A classic stop offering breathtaking panoramic views of the vast Rift Valley floor. There are curio shops here where you can buy souvenirs. It's the first 'wow' moment of a safari and a fantastic photo opportunity.",
+        },
+        {
+          name: "Maasai Market in Narok Town",
+          location: "Narok (last major town before Mara)",
+          description: "Visit a local Maasai market or reputable curio shops to buy authentic beadwork, wood carvings, and other crafts. It feels more authentic than airport shops and offers a chance to interact with local vendors.",
+        },
+      ],
+      atDestination: [
+        {
+          name: "Hot Air Balloon Safari",
+          location: "Masai Mara",
+          description: "A quintessential Mara experience offering an unparalleled perspective of the vast plains and wildlife, especially during migration season. Includes a bush champagne breakfast. Consistently rated as a 'once-in-a-lifetime' activity.",
+        },
+        {
+          name: "Maasai Village Cultural Visit",
+          location: "Masai Mara",
+          description: "Interact with the local Maasai community, learn about their culture, and witness their famous adumu (jumping) dance. A grounding and authentic experience that many visitors treasure.",
+        },
+        {
+          name: "Guided Bush Walk",
+          location: "Masai Mara (edge of reserve)",
+          description: "A walking safari with a Maasai guide provides a completely different sensory experience. Learn about animal tracks, medicinal plants, and observe smaller wildlife and birds up close.",
+        },
+        {
+          name: "Baboon Cliff & Makalia Falls",
+          location: "Lake Nakuru",
+          description: "The most famous viewpoint in Lake Nakuru offering stunning panoramic views of the lake, often dotted with flamingos. A highlight for photographers. Makalia Falls offers a lovely picnic spot with a different landscape.",
+        },
+        {
+          name: "Intensive Rhino Spotting",
+          location: "Lake Nakuru",
+          description: "Lake Nakuru is a designated rhino sanctuary. Dedicate time specifically to tracking and observing both black and white rhinos. Visitors consistently praise the high success rate of rhino sightings here.",
+        },
+      ],
+    },
     image: "/packages/masai-mara-safari.jpg",
     gallery: ["/packages/masai-mara-safari.jpg"],
   },
@@ -170,6 +223,47 @@ export const packages: Package[] = [
       "Optional activities",
     ],
     importantNotes: [],
+    excursions: {
+      enRoute: [
+        {
+          name: "Equator Crossing Point",
+          location: "Nanyuki (Nairobi to Ol Pejeta route)",
+          description: "Stand with one foot in each hemisphere at this famous landmark. Local guides perform a water-draining demonstration showing the Coriolis effect. A fun, quirky, and highly photogenic stop with great souvenir photos.",
+        },
+        {
+          name: "Karuguru Roasters / Trout Tree Restaurant",
+          location: "Near Nanyuki",
+          description: "Stop at a local coffee farm for a tour and tasting of Kenya's famous coffee. Alternatively, the Trout Tree Restaurant offers a unique dining experience built around a giant fig tree, serving fresh trout from Mt. Kenya slopes.",
+        },
+      ],
+      atDestination: [
+        {
+          name: "Endangered Species Enclosure",
+          location: "Ol Pejeta",
+          description: "Visit Najin and Fatu, the last two Northern White Rhinos on Earth. Also meet Baraka, a blind black rhino whom guests can often feed. A powerful and educational experience that receives rave reviews.",
+        },
+        {
+          name: "Sweetwaters Chimpanzee Sanctuary",
+          location: "Ol Pejeta",
+          description: "The only place to see chimpanzees in Kenya. Take a boat ride to see the chimps and learn about their rescue stories. A unique draw highly valued by visitors for its educational aspect.",
+        },
+        {
+          name: "Night Game Drive",
+          location: "Ol Pejeta",
+          description: "One of the few places offering this experience. After dinner, a guided drive with spotlights offers chances to see nocturnal animals like aardvarks, bat-eared foxes, and hunting predators. A thrilling and completely different safari experience.",
+        },
+        {
+          name: "Lion Tracking",
+          location: "Ol Pejeta",
+          description: "Join the research team to track a collared lion pride using a radio antenna, contributing to conservation efforts. A fascinating 'behind-the-scenes' look at conservation work.",
+        },
+        {
+          name: "Crescent Island Walking Safari",
+          location: "Lake Naivasha",
+          description: "Take a boat ride to Crescent Island for a nature walk among zebras, giraffes, wildebeest, waterbucks, and antelopes. A magical experience where you can walk close to wildlife in a safe, predator-free environment.",
+        },
+      ],
+    },
     image: "/packages/ol-pejeta-rhino.jpg",
     gallery: ["/packages/ol-pejeta-rhino.jpg"],
   },
@@ -296,6 +390,67 @@ export const packages: Package[] = [
       "Samburu park fees vary depending on which reserve your accommodation is in.",
       "Since Amboseli is relatively hot, game drives around noon are not usually recommended but can be arranged.",
     ],
+    excursions: {
+      enRoute: [
+        {
+          name: "Equator Crossing Point",
+          location: "Nanyuki (Nairobi to Samburu route)",
+          description: "Stand with one foot in each hemisphere at this famous landmark. Local guides perform a water-draining demonstration showing the Coriolis effect. A fun and photogenic stop.",
+        },
+        {
+          name: "Thomson's Falls",
+          location: "Nyahururu (between parks)",
+          description: "A beautiful 74m waterfall on the Ewaso Ng'iro river. Viewpoints at the top and a trail to the bottom of the gorge. A stunning natural wonder and great change of scenery from the savannah.",
+        },
+        {
+          name: "Great Rift Valley Viewpoint",
+          location: "Near Limuru (Nairobi to Mara route)",
+          description: "Breathtaking panoramic views of the vast Rift Valley floor with curio shops for souvenirs. A dramatic sense of Kenya's scale and geography.",
+        },
+        {
+          name: "Kitengela Hot Glass",
+          location: "Nairobi outskirts (Amboseli route)",
+          description: "A magical place with artists creating beautiful glassware from recycled glass. Watch glassblowers at work and walk across a suspension bridge. An unexpected artistic highlight.",
+        },
+      ],
+      atDestination: [
+        {
+          name: "Camel-Back Safari",
+          location: "Samburu",
+          description: "A unique activity specific to northern Kenya. A guided camel ride along the Ewaso Ng'iro River offers a different vantage point and memorable experience.",
+        },
+        {
+          name: "Samburu Cultural Village",
+          location: "Samburu",
+          description: "Visit a Samburu village to learn about their distinct culture, which differs from the Maasai. An authentic cultural immersion experience.",
+        },
+        {
+          name: "Endangered Species Enclosure",
+          location: "Ol Pejeta",
+          description: "Visit the last two Northern White Rhinos on Earth and the Sweetwaters Chimpanzee Sanctuary. Unique conservation-focused activities found only here.",
+        },
+        {
+          name: "Hot Air Balloon Safari",
+          location: "Masai Mara",
+          description: "The ideal location for this experience. With 3 nights in Mara, dedicating one morning to a balloon safari offers a grand-scale view you won't get anywhere else. Includes champagne breakfast.",
+        },
+        {
+          name: "Maasai Village Visit",
+          location: "Masai Mara",
+          description: "An excellent afternoon activity offering a different experience from wildlife drives. Learn about Maasai culture and traditions.",
+        },
+        {
+          name: "Crescent Island Walking Safari",
+          location: "Lake Naivasha",
+          description: "Boat ride to Crescent Island for a nature walk among giraffes, zebras, wildebeest, and various birds. The perfect activity for this stop.",
+        },
+        {
+          name: "Observation Hill",
+          location: "Amboseli",
+          description: "A breathtaking panoramic view of the entire park, its swamps filled with elephants, and the iconic Mt. Kilimanjaro. A fantastic photo opportunity that helps understand the ecosystem's scale.",
+        },
+      ],
+    },
     image: "/packages/kenya-grand-tour.jpg",
     gallery: ["/packages/kenya-grand-tour.jpg"],
   },
@@ -371,6 +526,31 @@ export const packages: Package[] = [
       "If Mombasa Air Safari flights are not available for your travel dates, we will suggest alternative flight options with change in price.",
       "Morning game drives in Masai Mara can be added on the last morning at the park by paying additional park fees.",
     ],
+    excursions: {
+      enRoute: [],
+      atDestination: [
+        {
+          name: "Hot Air Balloon Safari",
+          location: "Masai Mara",
+          description: "Even more recommended for fly-in clients who have relaxed mornings and are often on a higher budget. An unparalleled aerial perspective of the Mara with champagne bush breakfast included.",
+        },
+        {
+          name: "Full Day Game Drive with Picnic Lunch",
+          location: "Masai Mara",
+          description: "Venture to distant parts of the reserve like the Mara River to see crocodiles and hippos. A picnic lunch in the middle of the savannah is an immersive experience many tourists cherish.",
+        },
+        {
+          name: "Maasai Village Visit",
+          location: "Masai Mara",
+          description: "A perfect afternoon activity after a morning game drive. Interact with the Maasai community, learn about their culture, and witness traditional dances.",
+        },
+        {
+          name: "Sundowners at a Scenic Viewpoint",
+          location: "Masai Mara",
+          description: "Arrange for a private sundowner experience overlooking the Mara plains. A classic, highly-rated safari luxury perfect for fly-in guests seeking memorable moments.",
+        },
+      ],
+    },
     image: "/packages/mara-fly-in.jpg",
     gallery: ["/packages/mara-fly-in.jpg"],
   },
@@ -471,6 +651,52 @@ export const packages: Package[] = [
       "Effective from 1st November 2023, prices reflect the revised park fees for Masai Mara (USD 100 from Jan to Jun and USD 200 from July to Dec).",
       "Morning game drives in Masai Mara can be added on the last morning by paying additional park fees.",
     ],
+    excursions: {
+      enRoute: [
+        {
+          name: "Equator Crossing Point",
+          location: "Nanyuki (Nairobi to Ol Pejeta route)",
+          description: "Stand with one foot in each hemisphere at this famous landmark. Local guides perform a water-draining demonstration showing the Coriolis effect. A fun and photogenic stop.",
+        },
+        {
+          name: "Great Rift Valley Viewpoint",
+          location: "Near Limuru (route to Mara)",
+          description: "Breathtaking panoramic views of the vast Rift Valley floor with curio shops for souvenirs. The first 'wow' moment of the safari.",
+        },
+      ],
+      atDestination: [
+        {
+          name: "Endangered Species Enclosure",
+          location: "Ol Pejeta",
+          description: "Visit the last two Northern White Rhinos on Earth and the Sweetwaters Chimpanzee Sanctuary. Given the single-night stay, these unique conservation activities are the most impactful.",
+        },
+        {
+          name: "Rhino Spotting & Birdwatching",
+          location: "Lake Nakuru",
+          description: "Focus on the two main attractions: spotting both black and white rhinos and enjoying the diverse birdlife including flamingos around the lake.",
+        },
+        {
+          name: "Crescent Island Walking Safari",
+          location: "Lake Naivasha",
+          description: "Boat ride to Crescent Island for a nature walk among giraffes, zebras, wildebeest, and various birds. The perfect fit for this stop.",
+        },
+        {
+          name: "Hot Air Balloon Safari",
+          location: "Masai Mara",
+          description: "With three nights in the Mara, this is a great premium add-on. An unparalleled aerial view of the vast plains with champagne bush breakfast included.",
+        },
+        {
+          name: "Maasai Cultural Visit",
+          location: "Masai Mara",
+          description: "An excellent choice for one of the afternoons, offering a different experience from wildlife drives. Learn about Maasai traditions and culture.",
+        },
+        {
+          name: "Guided Nature Walk",
+          location: "Masai Mara (conservancy borders)",
+          description: "A great way to stretch legs and learn more about the ecosystem up close with a Maasai guide. Discover animal tracks, medicinal plants, and smaller wildlife.",
+        },
+      ],
+    },
     image: "/packages/central-kenya-tour.jpg",
     gallery: ["/packages/central-kenya-tour.jpg"],
   },

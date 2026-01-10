@@ -36,7 +36,7 @@
   },
   "whyUs": {
     "eyebrow": "Warum Brookshores",
-    "title": "Wir kümmern uns um die Logistik, Sie genießen das Abenteuer",
+    "title": "Wir organisieren, Sie erleben",
     "description": "Vom Moment der Buchung bis zu Ihrer Rückkehr haben wir jedes Detail im Griff.",
     "item1Title": "Detaillierte Reisepläne",
     "item1Desc": "Wissen Sie genau, was Sie jeden Tag Ihres Safari-Abenteuers erwartet.",
@@ -148,7 +148,7 @@
   "whatsapp": {
     "chatButton": "Auf WhatsApp chatten",
     "chatButtonShort": "WhatsApp",
-    "defaultMessage": "Hallo Brookshores Safaris! Ich möchte Hilfe bei der Planung einer Reise in Kenia."
+    "defaultMessage": "Hallo Brookshores Safaris! Ich hätte gerne Hilfe bei der Planung einer Kenia-Reise."
   },
   "tourPackages": {
     "masai-mara-lake-nakuru-6-day": {

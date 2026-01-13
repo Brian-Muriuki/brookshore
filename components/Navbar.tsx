@@ -23,11 +23,14 @@ export default function Navbar() {
   const isHome = pathWithoutLocale === "/";
 
   const navLinks = [
+    { href: `/${locale}#packages`, label: t("packages"), key: "packages" },
+    { href: `/${locale}/tours`, label: t("tours"), key: "tours" },
     { href: `/${locale}/corporate`, label: t("corporate"), key: "corporate" },
   ] as const;
 
   const activeHref = useMemo(() => {
     if (!pathname) return null;
+    if (pathname.includes("/tours")) return `/${locale}/tours`;
     if (pathname.includes("/corporate")) return `/${locale}/corporate`;
     return null;
   }, [pathname, locale]);

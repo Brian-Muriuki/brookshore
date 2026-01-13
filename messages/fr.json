@@ -19,7 +19,8 @@
     "corporate": "Entreprises",
     "about": "À propos",
     "contact": "Contact",
-    "packages": "Forfaits Safari"
+    "packages": "Forfaits Safari",
+    "tours": "Circuits"
   },
   "hero": {
     "badge": "Experts de confiance en safari au Kenya",
@@ -149,6 +150,99 @@
     "chatButton": "Discuter sur WhatsApp",
     "chatButtonShort": "WhatsApp",
     "defaultMessage": "Bonjour Brookshores Safaris! J'aimerais de l'aide pour planifier un voyage au Kenya."
+  },
+  "tours": {
+    "eyebrow": "Explorez le Kenya",
+    "title": "Circuits et Expériences",
+    "description": "Des safaris palpitants aux escapades relaxantes à la plage, découvrez les paysages variés et les aventures inoubliables du Kenya.",
+    "viewAll": "Voir tous les circuits",
+    "viewDetails": "Voir les détails",
+    "priceFrom": "À partir de"
+  },
+  "vibes": {
+    "all": "Tous",
+    "safari": "Safari et Faune",
+    "beach": "Plage et Côte",
+    "mountains": "Montagnes et Randonnée",
+    "lakes": "Lacs et Vallée du Rift",
+    "culture": "Culture et Patrimoine",
+    "adrenaline": "Adrénaline et Fun"
+  },
+  "tourDetail": {
+    "overview": "Aperçu",
+    "destinations": "Destinations",
+    "highlights": "Points forts",
+    "excursions": "Excursions Optionnelles",
+    "excursionsDescription": "Enrichissez votre expérience avec ces activités optionnelles.",
+    "enRouteExcursions": "En Chemin",
+    "enRouteDescription": "Arrêts panoramiques et activités pendant votre voyage entre les destinations",
+    "atDestinationExcursions": "À Vos Destinations",
+    "atDestinationDescription": "Expériences uniques disponibles à chaque destination",
+    "itinerary": "Itinéraire jour par jour",
+    "importantInfo": "Informations importantes",
+    "importantNote": "Note importante:",
+    "included": "Ce qui est inclus",
+    "excluded": "Ce qui n'est pas inclus",
+    "readyToBook": "Prêt à réserver cette aventure",
+    "readyToExperience": "Prêt à vivre cette aventure?",
+    "confirmAvailability": "Réservez maintenant et nous confirmerons la disponibilité sous 24 heures"
+  },
+  "tourItems": {
+    "maasai-mara-3-day-safari": {
+      "title": "Safari de 3 jours au Masai Mara",
+      "tagline": "Safaris au lever du soleil avec guides professionnels",
+      "description": "Le Masai Mara est la destination safari la plus célèbre du Kenya, abritant la Grande Migration où plus de 1,5 million de gnous et zèbres traversent depuis le Serengeti tanzanien. Le Mara offre des observations des Big Five toute l'année, des paysages de savane spectaculaires et des expériences culturelles Maasai authentiques."
+    },
+    "amboseli-2-day-elephants": {
+      "title": "Safari Éléphants de 2 jours à Amboseli",
+      "tagline": "Observez les éléphants avec le Kilimandjaro en toile de fond",
+      "description": "Amboseli est célèbre pour ses grands troupeaux d'éléphants et ses vues imprenables sur le Kilimandjaro. Ce court safari est parfait pour observer les éléphants africains dans leur habitat naturel avec le plus haut sommet d'Afrique en arrière-plan."
+    },
+    "diani-4-day-beach-escape": {
+      "title": "Escapade de 4 jours à Diani Beach",
+      "tagline": "Plages de sable blanc et eaux cristallines",
+      "description": "Diani Beach est la première destination balnéaire du Kenya, offrant des plages de sable blanc immaculées, des eaux turquoise cristallines et d'excellents sports nautiques. Parfait pour se détendre après un safari ou comme vacances balnéaires indépendantes."
+    },
+    "naivasha-weekend-getaway": {
+      "title": "Escapade Week-end au Lac Naivasha",
+      "tagline": "L'escapade week-end parfaite depuis la ville",
+      "description": "Le Lac Naivasha offre une escapade parfaite depuis Nairobi avec des promenades en bateau, un safari à pied sur Crescent Island et des aventures à Hell's Gate. À seulement 90 minutes de la capitale."
+    },
+    "mara-migration": {
+      "title": "Safari Grande Migration",
+      "tagline": "Témoignez de millions de gnous traversant la rivière Mara",
+      "description": "Vivez l'un des plus grands spectacles de la nature - la Grande Migration. Observez des millions de gnous et zèbres traverser la rivière Mara, évitant crocodiles et prédateurs."
+    },
+    "samburu-safari": {
+      "title": "Safari Faune à Samburu",
+      "tagline": "Découvrez les Cinq Spéciaux du nord du Kenya",
+      "description": "La Réserve Nationale de Samburu offre une faune unique que l'on ne trouve nulle part ailleurs au Kenya - les Cinq Spéciaux : zèbre de Grévy, autruche de Somalie, girafe réticulée, gérénuk et oryx beisa."
+    },
+    "mt-kenya-hike": {
+      "title": "Aventure Randonnée au Mont Kenya",
+      "tagline": "Atteignez le deuxième plus haut sommet d'Afrique",
+      "description": "Relevez le défi d'une ascension du Mont Kenya, la deuxième plus haute montagne d'Afrique. Diverses routes pour différents niveaux de forme physique, offrant des paysages alpins époustouflants et une flore unique."
+    },
+    "hellsgate-naivasha": {
+      "title": "Hell's Gate et Lac Naivasha",
+      "tagline": "Vélo, randonnée et promenades en bateau dans la Vallée du Rift",
+      "description": "Le Parc National de Hell's Gate offre des opportunités uniques de faire du vélo et de randonner parmi la faune. Combiné avec les promenades en bateau du Lac Naivasha, c'est l'aventure active parfaite."
+    },
+    "nairobi-city": {
+      "title": "Expérience de la Ville de Nairobi",
+      "tagline": "Culture, histoire et faune urbaine",
+      "description": "Découvrez le mélange unique de vie urbaine et de faune de Nairobi. Visitez le Centre des Girafes, l'Orphelinat d'Éléphants David Sheldrick et le Parc National de Nairobi."
+    },
+    "sagana-rafting": {
+      "title": "Rafting en Eaux Vives à Sagana",
+      "tagline": "Rapides pleins d'adrénaline sur la rivière Tana",
+      "description": "Vivez le frisson du rafting en eaux vives sur le plus long fleuve du Kenya. Sagana offre des rapides passionnants pour les débutants et les rafters expérimentés."
+    },
+    "watamu-marine": {
+      "title": "Aventure Marine à Watamu",
+      "tagline": "Snorkeling, plongée et détente sur la plage",
+      "description": "Le Parc National Marin de Watamu est un paradis pour les amoureux de l'eau. Explorez des récifs coralliens colorés, nagez avec les tortues de mer et détendez-vous sur des plages immaculées."
+    }
   },
   "tourPackages": {
     "masai-mara-lake-nakuru-6-day": {

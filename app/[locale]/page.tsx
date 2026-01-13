@@ -8,10 +8,12 @@ import SectionHeading from "@/components/SectionHeading";
 import TrustStrip from "@/components/TrustStrip";
 import NewsletterForm from "@/components/NewsletterForm";
 import PackageGrid from "@/components/PackageGrid";
+import TourGrid from "@/components/TourGrid";
 
 export default function Home() {
   const locale = useLocale();
   const t = useTranslations("packages");
+  const tTours = useTranslations("tours");
   const tWhyUs = useTranslations("whyUs");
   const tDest = useTranslations("destinations");
   const tTest = useTranslations("testimonials");
@@ -37,8 +39,32 @@ export default function Home() {
         </Container>
       </section>
 
+      {/* Tours & Experiences Section */}
+      <section id="tours" className="border-y border-border bg-muted py-14 sm:py-18 scroll-mt-20">
+        <Container>
+          <SectionHeading
+            eyebrow={tTours("eyebrow")}
+            title={tTours("title")}
+            description={tTours("description")}
+          />
+
+          <div className="mt-8">
+            <TourGrid showFilters={true} limit={6} />
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href={`/${locale}/tours`}
+              className="inline-flex items-center justify-center rounded-xl border border-brand bg-transparent px-6 py-3 text-sm font-semibold text-brand transition hover:bg-brand hover:text-white"
+            >
+              {tTours("viewAll")} →
+            </Link>
+          </div>
+        </Container>
+      </section>
+
       {/* Why Brookshores */}
-      <section className="border-y border-border bg-muted py-14 sm:py-18">
+      <section className="py-14 sm:py-18">
         <Container>
           <SectionHeading
             eyebrow={tWhyUs("eyebrow")}

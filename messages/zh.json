@@ -19,7 +19,8 @@
     "corporate": "企业服务",
     "about": "关于我们",
     "contact": "联系我们",
-    "packages": "Safari套餐"
+    "packages": "Safari套餐",
+    "tours": "旅游线路"
   },
   "hero": {
     "badge": "肯尼亚Safari专家",
@@ -149,6 +150,99 @@
     "chatButton": "WhatsApp聊天",
     "chatButtonShort": "WhatsApp",
     "defaultMessage": "您好Brookshores Safaris！我想咨询肯尼亚旅行规划。"
+  },
+  "tours": {
+    "eyebrow": "探索肯尼亚",
+    "title": "旅游线路与体验",
+    "description": "从惊险的Safari到轻松的海滩度假，发现肯尼亚多样的风景和难忘的冒险。",
+    "viewAll": "查看所有线路",
+    "viewDetails": "查看详情",
+    "priceFrom": "起价"
+  },
+  "vibes": {
+    "all": "全部",
+    "safari": "Safari与野生动物",
+    "beach": "海滩与海岸",
+    "mountains": "山地与徒步",
+    "lakes": "湖泊与东非大裂谷",
+    "culture": "文化与遗产",
+    "adrenaline": "刺激与趣味"
+  },
+  "tourDetail": {
+    "overview": "概览",
+    "destinations": "目的地",
+    "highlights": "亮点",
+    "excursions": "可选活动",
+    "excursionsDescription": "通过这些可选活动丰富您的体验。",
+    "enRouteExcursions": "途中活动",
+    "enRouteDescription": "目的地之间旅途中的风景名胜和活动",
+    "atDestinationExcursions": "目的地活动",
+    "atDestinationDescription": "各目的地提供的独特体验",
+    "itinerary": "每日行程",
+    "importantInfo": "重要信息",
+    "importantNote": "重要提示：",
+    "included": "包含项目",
+    "excluded": "不包含项目",
+    "readyToBook": "准备好预订这次冒险了吗",
+    "readyToExperience": "准备好体验这次冒险了吗？",
+    "confirmAvailability": "立即预订，我们将在24小时内确认可用性"
+  },
+  "tourItems": {
+    "maasai-mara-3-day-safari": {
+      "title": "3天马赛马拉Safari",
+      "tagline": "专业向导带领的日出猎游",
+      "description": "马赛马拉是肯尼亚最著名的Safari目的地，是角马大迁徙的家园，每年有超过150万头角马和斑马从坦桑尼亚塞伦盖蒂迁徙而来。马拉全年都能看到五大动物，拥有壮观的草原景观和原汁原味的马赛文化体验。"
+    },
+    "amboseli-2-day-elephants": {
+      "title": "2天安博塞利大象Safari",
+      "tagline": "在乞力马扎罗山背景下观赏大象",
+      "description": "安博塞利以其大象群和乞力马扎罗山的壮丽景色而闻名。这个短途Safari非常适合在非洲最高峰的衬托下观赏非洲象在自然栖息地的生活。"
+    },
+    "diani-4-day-beach-escape": {
+      "title": "4天迪亚尼海滩度假",
+      "tagline": "白色沙滩和清澈海水",
+      "description": "迪亚尼海滩是肯尼亚首屈一指的海滩目的地，拥有洁白的沙滩、清澈的蓝绿色海水和丰富的水上运动。非常适合Safari后的放松或作为独立的海滩假期。"
+    },
+    "naivasha-weekend-getaway": {
+      "title": "奈瓦沙湖周末游",
+      "tagline": "完美的城市周末逃离",
+      "description": "奈瓦沙湖提供完美的内罗毕周末逃离，有风景优美的乘船游览、新月岛徒步Safari和地狱之门冒险。距首都仅90分钟车程。"
+    },
+    "mara-migration": {
+      "title": "大迁徙Safari",
+      "tagline": "见证数百万角马横渡马拉河",
+      "description": "体验大自然最壮观的奇观之一——角马大迁徙。观看数百万角马和斑马穿越马拉河，躲避鳄鱼和掠食者。"
+    },
+    "samburu-safari": {
+      "title": "桑布鲁野生动物Safari",
+      "tagline": "在肯尼亚北部发现特有五大动物",
+      "description": "桑布鲁国家保护区拥有肯尼亚独有的野生动物——特有五大动物：细纹斑马、索马里鸵鸟、网纹长颈鹿、长颈羚和东非剑羚。"
+    },
+    "mt-kenya-hike": {
+      "title": "肯尼亚山徒步冒险",
+      "tagline": "攀登非洲第二高峰",
+      "description": "挑战攀登肯尼亚山——非洲第二高山。多条路线适合不同体能水平，提供壮丽的高山风景和独特的植物。"
+    },
+    "hellsgate-naivasha": {
+      "title": "地狱之门与奈瓦沙湖",
+      "tagline": "东非大裂谷的骑行、徒步和乘船",
+      "description": "地狱之门国家公园提供独特的骑自行车和徒步体验，可以近距离接触野生动物。结合奈瓦沙湖的乘船游览，是完美的户外冒险。"
+    },
+    "nairobi-city": {
+      "title": "内罗毕城市体验",
+      "tagline": "文化、历史与城市野生动物",
+      "description": "发现内罗毕独特的城市生活与野生动物的融合。参观长颈鹿中心、大卫·谢尔德里克大象孤儿院和内罗毕国家公园。"
+    },
+    "sagana-rafting": {
+      "title": "萨加纳激流漂流",
+      "tagline": "塔纳河上刺激的急流",
+      "description": "体验在肯尼亚最长河流上的激流漂流。萨加纳提供适合初学者和经验丰富的漂流者的刺激急流。"
+    },
+    "watamu-marine": {
+      "title": "瓦塔姆海洋冒险",
+      "tagline": "浮潜、潜水和海滩放松",
+      "description": "瓦塔姆海洋国家公园是水上爱好者的天堂。探索色彩缤纷的珊瑚礁，与海龟共游，在原始海滩上放松。"
+    }
   },
   "tourPackages": {
     "masai-mara-lake-nakuru-6-day": {

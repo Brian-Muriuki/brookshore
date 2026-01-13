@@ -19,7 +19,8 @@
     "corporate": "Corporate",
     "about": "About",
     "contact": "Contact",
-    "packages": "Safari Packages"
+    "packages": "Safari Packages",
+    "tours": "Tours"
   },
   "hero": {
     "badge": "Trusted Kenya Safari Experts",
@@ -149,6 +150,99 @@
     "chatButton": "Chat on WhatsApp",
     "chatButtonShort": "WhatsApp",
     "defaultMessage": "Hi Brookshores Safaris! I'd like help planning a trip in Kenya."
+  },
+  "tours": {
+    "eyebrow": "Explore Kenya",
+    "title": "Tours & Experiences",
+    "description": "From thrilling safaris to relaxing beach escapes, discover Kenya's diverse landscapes and unforgettable adventures.",
+    "viewAll": "View All Tours",
+    "viewDetails": "View Details",
+    "priceFrom": "From"
+  },
+  "vibes": {
+    "all": "All",
+    "safari": "Safari & Wildlife",
+    "beach": "Beach & Coast",
+    "mountains": "Mountains & Hiking",
+    "lakes": "Lakes & Rift Valley",
+    "culture": "Culture & Heritage",
+    "adrenaline": "Adrenaline & Fun"
+  },
+  "tourDetail": {
+    "overview": "Overview",
+    "destinations": "Destinations",
+    "highlights": "Highlights",
+    "excursions": "Optional Excursions",
+    "excursionsDescription": "Enhance your experience with these optional activities.",
+    "enRouteExcursions": "On the Way",
+    "enRouteDescription": "Scenic stops and activities during your journey between destinations",
+    "atDestinationExcursions": "At Your Destinations",
+    "atDestinationDescription": "Unique experiences available at each destination",
+    "itinerary": "Day-by-Day Itinerary",
+    "importantInfo": "Important Information",
+    "importantNote": "Important Note:",
+    "included": "What's Included",
+    "excluded": "What's Excluded",
+    "readyToBook": "Ready to book this adventure",
+    "readyToExperience": "Ready to experience this adventure?",
+    "confirmAvailability": "Book now and we'll confirm availability within 24 hours"
+  },
+  "tourItems": {
+    "maasai-mara-3-day-safari": {
+      "title": "3-Day Maasai Mara Safari",
+      "tagline": "Sunrise game drives with professional guides",
+      "description": "The Masai Mara is Kenya's most famous safari destination, home to the Great Migration where over 1.5 million wildebeest and zebras cross from Tanzania's Serengeti. Beyond the migration, the Mara offers year-round Big Five sightings, dramatic savannah landscapes, and authentic Maasai cultural experiences."
+    },
+    "amboseli-2-day-elephants": {
+      "title": "2-Day Amboseli Elephant Safari",
+      "tagline": "Watch elephants against Mount Kilimanjaro",
+      "description": "Amboseli is famous for its large elephant herds and stunning views of Mount Kilimanjaro. This short safari is perfect for witnessing African elephants in their natural habitat with Africa's highest peak as a backdrop."
+    },
+    "diani-4-day-beach-escape": {
+      "title": "4-Day Diani Beach Escape",
+      "tagline": "White sand beaches and crystal-clear waters",
+      "description": "Diani Beach is Kenya's premier beach destination, offering pristine white sand beaches, crystal-clear turquoise waters, and excellent water sports. Perfect for relaxation after a safari or as a standalone beach holiday."
+    },
+    "naivasha-weekend-getaway": {
+      "title": "Weekend Lake Naivasha Getaway",
+      "tagline": "Perfect weekend escape from the city",
+      "description": "Lake Naivasha offers a perfect weekend escape from Nairobi with scenic boat rides, Crescent Island walking safari, and Hell's Gate adventures. Just 90 minutes from the capital, it's ideal for nature lovers seeking a quick retreat."
+    },
+    "mara-migration": {
+      "title": "Great Migration Safari",
+      "tagline": "Witness millions of wildebeest crossing the Mara River",
+      "description": "Experience one of nature's greatest spectacles - the Great Migration. Watch as millions of wildebeest and zebras make their perilous crossing of the Mara River, evading crocodiles and predators in their annual journey."
+    },
+    "samburu-safari": {
+      "title": "Samburu Wildlife Safari",
+      "tagline": "Discover the Special Five in northern Kenya",
+      "description": "Samburu National Reserve offers unique wildlife found nowhere else in Kenya - the Special Five: Grevy's zebra, Somali ostrich, reticulated giraffe, gerenuk, and Beisa oryx. Experience the rugged beauty of northern Kenya."
+    },
+    "mt-kenya-hike": {
+      "title": "Mount Kenya Hiking Adventure",
+      "tagline": "Summit Africa's second-highest peak",
+      "description": "Challenge yourself with a trek up Mount Kenya, Africa's second-highest mountain. Various routes cater to different fitness levels, offering stunning alpine scenery, unique flora, and incredible achievement."
+    },
+    "hellsgate-naivasha": {
+      "title": "Hell's Gate & Lake Naivasha",
+      "tagline": "Cycling, hiking and boat rides in the Rift Valley",
+      "description": "Hell's Gate National Park offers unique opportunities to cycle and hike among wildlife. Combined with Lake Naivasha's boat rides and Crescent Island, it's the perfect active adventure in the Rift Valley."
+    },
+    "nairobi-city": {
+      "title": "Nairobi City Experience",
+      "tagline": "Culture, history and urban wildlife",
+      "description": "Discover Nairobi's unique blend of urban life and wildlife. Visit the Giraffe Centre, David Sheldrick Elephant Orphanage, Nairobi National Park, and explore the city's vibrant cultural scene."
+    },
+    "sagana-rafting": {
+      "title": "Sagana White Water Rafting",
+      "tagline": "Adrenaline-pumping rapids on the Tana River",
+      "description": "Experience the thrill of white water rafting on Kenya's longest river. Sagana offers exciting rapids suitable for beginners and experienced rafters alike, with beautiful scenery along the way."
+    },
+    "watamu-marine": {
+      "title": "Watamu Marine Adventure",
+      "tagline": "Snorkeling, diving and beach relaxation",
+      "description": "Watamu Marine National Park is a paradise for water lovers. Explore colorful coral reefs, swim with sea turtles, visit the historic Gede Ruins, and relax on pristine beaches."
+    }
   },
   "tourPackages": {
     "masai-mara-lake-nakuru-6-day": {

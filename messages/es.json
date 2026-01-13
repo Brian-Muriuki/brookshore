@@ -19,7 +19,8 @@
     "corporate": "Empresas",
     "about": "Nosotros",
     "contact": "Contacto",
-    "packages": "Paquetes Safari"
+    "packages": "Paquetes Safari",
+    "tours": "Tours"
   },
   "hero": {
     "badge": "Expertos de confianza en safaris en Kenia",
@@ -149,6 +150,99 @@
     "chatButton": "Chatear en WhatsApp",
     "chatButtonShort": "WhatsApp",
     "defaultMessage": "¡Hola Brookshores Safaris! Me gustaría ayuda para planificar un viaje a Kenia."
+  },
+  "tours": {
+    "eyebrow": "Explora Kenia",
+    "title": "Tours y Experiencias",
+    "description": "Desde emocionantes safaris hasta relajantes escapadas a la playa, descubre los diversos paisajes y aventuras inolvidables de Kenia.",
+    "viewAll": "Ver todos los tours",
+    "viewDetails": "Ver detalles",
+    "priceFrom": "Desde"
+  },
+  "vibes": {
+    "all": "Todos",
+    "safari": "Safari y Vida Salvaje",
+    "beach": "Playa y Costa",
+    "mountains": "Montañas y Senderismo",
+    "lakes": "Lagos y Valle del Rift",
+    "culture": "Cultura y Patrimonio",
+    "adrenaline": "Adrenalina y Diversión"
+  },
+  "tourDetail": {
+    "overview": "Descripción",
+    "destinations": "Destinos",
+    "highlights": "Destacados",
+    "excursions": "Excursiones Opcionales",
+    "excursionsDescription": "Mejora tu experiencia con estas actividades opcionales.",
+    "enRouteExcursions": "En el Camino",
+    "enRouteDescription": "Paradas escénicas y actividades durante tu viaje entre destinos",
+    "atDestinationExcursions": "En tus Destinos",
+    "atDestinationDescription": "Experiencias únicas disponibles en cada destino",
+    "itinerary": "Itinerario día a día",
+    "importantInfo": "Información importante",
+    "importantNote": "Nota importante:",
+    "included": "Qué incluye",
+    "excluded": "Qué no incluye",
+    "readyToBook": "¿Listo para reservar esta aventura",
+    "readyToExperience": "¿Listo para vivir esta aventura?",
+    "confirmAvailability": "Reserva ahora y confirmaremos la disponibilidad en 24 horas"
+  },
+  "tourItems": {
+    "maasai-mara-3-day-safari": {
+      "title": "Safari de 3 días en Masai Mara",
+      "tagline": "Safaris al amanecer con guías profesionales",
+      "description": "Masai Mara es el destino de safari más famoso de Kenia, hogar de la Gran Migración donde más de 1.5 millones de ñus y cebras cruzan desde el Serengeti de Tanzania. Ofrece avistamientos de los Cinco Grandes durante todo el año, paisajes dramáticos de sabana y experiencias culturales maasai auténticas."
+    },
+    "amboseli-2-day-elephants": {
+      "title": "Safari de Elefantes de 2 días en Amboseli",
+      "tagline": "Observa elefantes con el Kilimanjaro de fondo",
+      "description": "Amboseli es famoso por sus grandes manadas de elefantes y las impresionantes vistas del Kilimanjaro. Este corto safari es perfecto para ver elefantes africanos en su hábitat natural con el pico más alto de África como telón de fondo."
+    },
+    "diani-4-day-beach-escape": {
+      "title": "Escapada de 4 días a Diani Beach",
+      "tagline": "Playas de arena blanca y aguas cristalinas",
+      "description": "Diani Beach es el principal destino de playa de Kenia, con playas de arena blanca prístina, aguas turquesas cristalinas y excelentes deportes acuáticos. Perfecto para relajarse después de un safari o como vacaciones de playa independientes."
+    },
+    "naivasha-weekend-getaway": {
+      "title": "Escapada de Fin de Semana al Lago Naivasha",
+      "tagline": "Escape perfecto de fin de semana desde la ciudad",
+      "description": "El Lago Naivasha ofrece una escapada perfecta de Nairobi con paseos en bote, safari a pie en Crescent Island y aventuras en Hell's Gate. A solo 90 minutos de la capital."
+    },
+    "mara-migration": {
+      "title": "Safari de la Gran Migración",
+      "tagline": "Presencia millones de ñus cruzando el río Mara",
+      "description": "Experimenta uno de los mayores espectáculos de la naturaleza - la Gran Migración. Observa cómo millones de ñus y cebras cruzan el río Mara, evadiendo cocodrilos y depredadores."
+    },
+    "samburu-safari": {
+      "title": "Safari de Vida Salvaje en Samburu",
+      "tagline": "Descubre los Cinco Especiales en el norte de Kenia",
+      "description": "La Reserva Nacional de Samburu ofrece fauna única que solo se encuentra aquí en Kenia - los Cinco Especiales: cebra de Grevy, avestruz somalí, jirafa reticulada, gerenuc y órix beisa."
+    },
+    "mt-kenya-hike": {
+      "title": "Aventura de Senderismo en el Monte Kenia",
+      "tagline": "Conquista el segundo pico más alto de África",
+      "description": "Desafíate con una caminata al Monte Kenia, la segunda montaña más alta de África. Varias rutas para diferentes niveles de condición física, con paisajes alpinos impresionantes y flora única."
+    },
+    "hellsgate-naivasha": {
+      "title": "Hell's Gate y Lago Naivasha",
+      "tagline": "Ciclismo, senderismo y paseos en bote en el Valle del Rift",
+      "description": "El Parque Nacional Hell's Gate ofrece oportunidades únicas para andar en bicicleta y caminar entre la fauna. Combinado con paseos en bote en el Lago Naivasha, es la aventura activa perfecta."
+    },
+    "nairobi-city": {
+      "title": "Experiencia de la Ciudad de Nairobi",
+      "tagline": "Cultura, historia y vida salvaje urbana",
+      "description": "Descubre la mezcla única de vida urbana y fauna de Nairobi. Visita el Centro de Jirafas, el Orfanato de Elefantes David Sheldrick y el Parque Nacional de Nairobi."
+    },
+    "sagana-rafting": {
+      "title": "Rafting en Aguas Bravas en Sagana",
+      "tagline": "Rápidos llenos de adrenalina en el río Tana",
+      "description": "Experimenta la emoción del rafting en aguas bravas en el río más largo de Kenia. Sagana ofrece rápidos emocionantes para principiantes y expertos."
+    },
+    "watamu-marine": {
+      "title": "Aventura Marina en Watamu",
+      "tagline": "Snorkel, buceo y relajación en la playa",
+      "description": "El Parque Nacional Marino de Watamu es un paraíso para los amantes del agua. Explora arrecifes de coral coloridos, nada con tortugas marinas y relájate en playas prístinas."
+    }
   },
   "tourPackages": {
     "masai-mara-lake-nakuru-6-day": {

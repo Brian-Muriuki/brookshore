@@ -446,10 +446,9 @@ export const tours: Tour[] = [
       resident: { from: 24000, to: 42000, currency: "KES" },
       note: "Premium destination, usually higher than Mara",
     },
-    image:
-      "https://images.unsplash.com/photo-1534177616064-ef1a74a77f95?auto=format&fit=crop&w=800&q=80",
+    image: "/images/tours/samburu-safari.png",
     gallery: [
-      "https://images.unsplash.com/photo-1534177616064-ef1a74a77f95?auto=format&fit=crop&w=800&q=80",
+      "/images/tours/samburu-safari.png",
     ],
   },
   {
@@ -548,10 +547,9 @@ export const tours: Tour[] = [
       resident: { from: 21000, to: 40000, currency: "KES" },
       note: "Conservancy fees reflect conservation costs",
     },
-    image:
-      "https://images.unsplash.com/photo-1535338454528-5c55b3c77e8c?auto=format&fit=crop&w=800&q=80",
+    image: "/images/tours/ol-pejeta.png",
     gallery: [
-      "https://images.unsplash.com/photo-1535338454528-5c55b3c77e8c?auto=format&fit=crop&w=800&q=80",
+      "/images/tours/ol-pejeta.png",
     ],
   },
 

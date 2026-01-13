@@ -1,5 +1,4 @@
-"use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { Package } from "@/data/packages";
@@ -24,11 +23,11 @@ export default function PackageCard({ package: pkg }: PackageCardProps) {
     >
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-          style={{
-            backgroundImage: `url(${pkg.image})`,
-          }}
+        <Image
+          src={pkg.image}
+          alt={title}
+          fill
+          className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 

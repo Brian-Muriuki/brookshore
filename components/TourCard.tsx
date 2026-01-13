@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { Tour } from "@/data/tours";
@@ -33,11 +34,11 @@ export default function TourCard({ tour }: TourCardProps) {
     >
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-          style={{
-            backgroundImage: `url(${tour.image})`,
-          }}
+        <Image
+          src={tour.image}
+          alt={title}
+          fill
+          className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 

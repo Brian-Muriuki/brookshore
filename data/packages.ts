@@ -158,8 +158,8 @@ export const packages: Package[] = [
         },
       ],
     },
-    image: "/packages/masai-mara-safari.jpg",
-    gallery: ["/packages/masai-mara-safari.jpg"],
+    image: "/images/packages/mara-nakuru-6-day.png",
+    gallery: ["/images/packages/mara-nakuru-6-day.png"],
   },
   {
     id: "ol-pejeta-naivasha-4-day",
@@ -264,8 +264,8 @@ export const packages: Package[] = [
         },
       ],
     },
-    image: "/packages/ol-pejeta-rhino.jpg",
-    gallery: ["/packages/ol-pejeta-rhino.jpg"],
+    image: "/images/packages/ol-pejeta-naivasha-4-day.png",
+    gallery: ["/images/packages/ol-pejeta-naivasha-4-day.png"],
   },
   {
     id: "kenya-grand-11-day",
@@ -451,8 +451,8 @@ export const packages: Package[] = [
         },
       ],
     },
-    image: "/packages/kenya-grand-tour.jpg",
-    gallery: ["/packages/kenya-grand-tour.jpg"],
+    image: "/images/packages/kenya-grand-11-day.png",
+    gallery: ["/images/packages/kenya-grand-11-day.png"],
   },
   {
     id: "mara-fly-in-4-day",
@@ -551,8 +551,8 @@ export const packages: Package[] = [
         },
       ],
     },
-    image: "/packages/mara-fly-in.jpg",
-    gallery: ["/packages/mara-fly-in.jpg"],
+    image: "/images/packages/mara-fly-in-4-day.png",
+    gallery: ["/images/packages/mara-fly-in-4-day.png"],
   },
   {
     id: "central-kenya-7-day",
@@ -697,8 +697,8 @@ export const packages: Package[] = [
         },
       ],
     },
-    image: "/packages/central-kenya-tour.jpg",
-    gallery: ["/packages/central-kenya-tour.jpg"],
+    image: "/images/packages/central-kenya-7-day.png",
+    gallery: ["/images/packages/central-kenya-7-day.png"],
   },
 ];
 

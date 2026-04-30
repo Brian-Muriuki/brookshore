@@ -2,26 +2,28 @@ import Link from "next/link";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import QuoteForm from "@/components/QuoteForm";
+import { getWhatsAppNumber } from "@/lib/phone";
+import { getContactEmail } from "@/lib/contact";
 
 export const metadata = {
   title: "Contact",
 };
 
 function buildWhatsAppHref(message: string) {
-  const number =
-    process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace(/[^\d]/g, "") ||
-    "254700000000";
+  const number = getWhatsAppNumber();
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
 
 export default function ContactPage() {
+  const email = getContactEmail();
+
   return (
     <div className="py-10 sm:py-12">
       <Container>
         <SectionHeading
           eyebrow="Contact"
           title="Talk to Brookshores Safaris"
-          description="Use WhatsApp for quick help, or send a message via the form."
+          description="Use WhatsApp for quick help, email us directly, or send a message via the form."
         />
 
         <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_520px] lg:items-start">
@@ -30,6 +32,14 @@ export default function ContactPage() {
               <div className="text-sm font-semibold">Office info</div>
               <div className="mt-3 space-y-2 text-sm text-[color-mix(in_oklab,var(--foreground)_78%,transparent)]">
                 <div>Nairobi, Kenya</div>
+                <div>
+                  <a
+                    href={`mailto:${email}`}
+                    className="font-semibold text-brand hover:underline"
+                  >
+                    {email}
+                  </a>
+                </div>
                 <div className="pt-2">
                   <Link
                     href={buildWhatsAppHref(

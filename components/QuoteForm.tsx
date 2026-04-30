@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { Button } from "./Button";
+import { getLeadClientContext } from "@/lib/leadContext";
 
 type Variant = "tour" | "corporate" | "contact";
 
@@ -111,6 +112,7 @@ export default function QuoteForm({
     setStatus("submitting");
 
     try {
+      const leadContext = getLeadClientContext();
       const res = await fetch("/api/leads", {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -125,7 +127,7 @@ export default function QuoteForm({
           groupSize: variant !== "contact" ? groupSize : undefined,
           budgetRange: variant === "corporate" ? budgetRange : undefined,
           message,
-          page: typeof window !== "undefined" ? window.location.pathname : undefined,
+          ...leadContext,
         }),
       });
 
@@ -160,10 +162,10 @@ export default function QuoteForm({
   if (status === "success") {
     return (
       <div className="rounded-2xl border border-border bg-card p-6">
-        <div className="text-base font-semibold">Thanks — message received</div>
+        <div className="text-base font-semibold">Thanks, we&rsquo;ve got your message</div>
         <p className="mt-2 text-sm leading-6 text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
-          We’ll review the details and get back to you shortly. If you need a
-          faster response, use the WhatsApp button.
+          We&rsquo;ll go through the details and get back to you shortly. If you
+          need a faster reply, ping us on WhatsApp.
         </p>
         <div className="mt-5">
           <Button type="button" variant="secondary" onClick={reset}>

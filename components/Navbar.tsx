@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import Container from "./Container";
+import BrandLogo from "./BrandLogo";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 function classNames(...values: Array<string | false | undefined>) {
@@ -21,9 +22,9 @@ export default function Navbar() {
   // Remove locale prefix from pathname for comparison
   const pathWithoutLocale = pathname.replace(`/${locale}`, "") || "/";
   const isHome = pathWithoutLocale === "/";
+  const packagesHref = `/${locale}#packages-by-group`;
 
   const navLinks = [
-    { href: `/${locale}#packages`, label: t("packages"), key: "packages" },
     { href: `/${locale}/tours`, label: t("tours"), key: "tours" },
     { href: `/${locale}/corporate`, label: t("corporate"), key: "corporate" },
   ] as const;
@@ -34,6 +35,16 @@ export default function Navbar() {
     if (pathname.includes("/corporate")) return `/${locale}/corporate`;
     return null;
   }, [pathname, locale]);
+
+  function handlePackagesClick(event: React.MouseEvent<HTMLAnchorElement>) {
+    if (!isHome) return;
+    event.preventDefault();
+    const element = document.getElementById("packages-by-group");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      window.history.replaceState(null, "", packagesHref);
+    }
+  }
 
   return (
     <header
@@ -47,22 +58,22 @@ export default function Navbar() {
       <Container>
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center gap-2">
-            <div className="grid size-9 place-items-center rounded-xl bg-brand text-brand-foreground font-black">
-              B
-            </div>
-            <div className="leading-tight">
-              <div className="text-sm font-semibold tracking-tight">
-                Brookshores Safaris
-              </div>
-              <div className="text-[11px] text-[color-mix(in_oklab,var(--foreground)_65%,transparent)]">
-                Kenya tours & corporate travel
-              </div>
-            </div>
+          <Link href={`/${locale}`} className="flex items-center">
+            <span className="sr-only">Brookshores Safaris home</span>
+            <BrandLogo className="h-11 w-[132px] sm:h-12 sm:w-[152px]" priority />
           </Link>
 
           {/* Desktop nav */}
           <nav className="hidden items-center gap-1 md:flex">
+            {/* CTA */}
+            <Link
+              href={packagesHref}
+              onClick={handlePackagesClick}
+              className="mr-2 inline-flex items-center justify-center rounded-xl bg-brand px-4 py-2 text-sm font-semibold text-brand-foreground transition hover:brightness-110"
+            >
+              {tCommon("viewPackages")}
+            </Link>
+
             {navLinks.map((link) => (
               <Link
                 key={link.key}
@@ -80,14 +91,6 @@ export default function Navbar() {
 
             {/* Language Switcher */}
             <LanguageSwitcher />
-
-            {/* CTA */}
-            <Link
-              href={`/${locale}#packages`}
-              className="ml-2 inline-flex items-center justify-center rounded-xl bg-brand px-4 py-2 text-sm font-semibold text-brand-foreground transition hover:brightness-110"
-            >
-              {tCommon("viewPackages")}
-            </Link>
           </nav>
 
           {/* Mobile: Language + Hamburger */}
@@ -133,6 +136,16 @@ export default function Navbar() {
         <div className="border-t border-border bg-[color-mix(in_oklab,var(--background)_92%,transparent)] md:hidden">
           <Container>
             <div className="flex flex-col gap-1 py-3">
+              <Link
+                href={packagesHref}
+                onClick={(event) => {
+                  handlePackagesClick(event);
+                  setMenuOpen(false);
+                }}
+                className="mb-2 inline-flex items-center justify-center rounded-xl bg-brand px-4 py-3 text-sm font-semibold text-brand-foreground"
+              >
+                {tCommon("viewPackages")}
+              </Link>
               {navLinks.map((link) => (
                 <Link
                   key={link.key}
@@ -146,13 +159,6 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href={`/${locale}#packages`}
-                onClick={() => setMenuOpen(false)}
-                className="mt-2 inline-flex items-center justify-center rounded-xl bg-brand px-4 py-3 text-sm font-semibold text-brand-foreground"
-              >
-                {tCommon("viewPackages")}
-              </Link>
             </div>
           </Container>
         </div>

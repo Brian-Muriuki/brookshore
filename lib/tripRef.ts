@@ -1,3 +1,5 @@
+import { getWhatsAppNumber } from "./phone";
+
 /**
  * Generate a unique trip reference ID
  * Format: TRIP-YYYY-XXXXX (e.g., TRIP-2024-A3B2C)
@@ -85,6 +87,6 @@ export function generateWhatsAppUrl(
 }
 
 /**
- * Default WhatsApp number for Brookshores Safaris
+ * Shared WhatsApp number for Brookshores Safaris
  */
-export const WHATSAPP_NUMBER = "254719551922";
+export const WHATSAPP_NUMBER = getWhatsAppNumber();

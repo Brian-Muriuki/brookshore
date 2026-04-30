@@ -39,9 +39,9 @@ export default function SuccessConfirmation({
         Your Wishlist is safely with us!
       </h1>
       <p className="mx-auto mt-3 max-w-md text-sm text-[color-mix(in_oklab,var(--foreground)_70%,transparent)]">
-        We&apos;ve received your dream plan. Check your WhatsApp shortly — our
-        travel expert will send you a polished itinerary with exact availability
-        and options.
+        We&apos;ve received your dream plan. Keep an eye on WhatsApp shortly. One
+        of our travel experts will send through a polished itinerary with
+        availability and options.
       </p>
 
       {/* Trip reference */}

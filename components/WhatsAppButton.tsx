@@ -2,13 +2,7 @@
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-
-function getWhatsAppNumber() {
-  return (
-    process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace(/[^\d]/g, "") ||
-    "254719551922"
-  );
-}
+import { getWhatsAppNumber } from "@/lib/phone";
 
 function buildWhatsAppHref(message: string) {
   const number = getWhatsAppNumber();

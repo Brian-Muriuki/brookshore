@@ -9,6 +9,8 @@ import TrustStrip from "@/components/TrustStrip";
 import NewsletterForm from "@/components/NewsletterForm";
 import PackageGrid from "@/components/PackageGrid";
 import TourGrid from "@/components/TourGrid";
+import SeasonalSpotlight from "@/components/SeasonalSpotlight";
+import AudiencePackagesSection from "@/components/AudiencePackagesSection";
 
 export default function Home() {
   const locale = useLocale();
@@ -23,14 +25,16 @@ export default function Home() {
     <div>
       <HeroSection />
       <TrustStrip />
+      <SeasonalSpotlight />
+      <AudiencePackagesSection />
 
       {/* Safari Packages Section */}
       <section id="packages" className="py-14 sm:py-18 scroll-mt-20">
         <Container>
           <SectionHeading
             eyebrow={t("eyebrow")}
-            title={t("title")}
-            description={t("description")}
+            title="Classic Safari Packages"
+            description="Browse our day-by-day safari itineraries below. If you're traveling with a specific group in mind, the Packages by Group section above might be a better starting point."
           />
 
           <div className="mt-8">
@@ -156,15 +160,15 @@ export default function Home() {
               {[
                 {
                   name: "Amina (Nairobi)",
-                  text: "The Naivasha weekend was seamless — clear pricing, quick responses, and great timing.",
+                  text: "Our Naivasha weekend was so easy to book. Pricing was upfront, replies came in quickly, and everything ran on time.",
                 },
                 {
                   name: "James (UK)",
-                  text: "The Mara itinerary had everything we needed laid out — we knew what was included and what to expect.",
+                  text: "Our Mara itinerary was laid out beautifully. We knew exactly what was included and what to expect each day.",
                 },
                 {
                   name: "HR Team (Tech Company)",
-                  text: "Proposal flow was straightforward — clear options, timelines, and coordination.",
+                  text: "Booking the team trip was painless. We got clear options, realistic timelines, and great coordination throughout.",
                 },
               ].map((testimonial) => (
                 <figure

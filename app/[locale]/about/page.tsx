@@ -75,7 +75,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Promise"
             title="Responsible travel, done right"
-            description="A dedicated section for safety, sustainability, and respect for communities."
+            description="We take safety, sustainability, and the communities we work with seriously, not as an afterthought."
           />
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
@@ -131,7 +131,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="FAQ"
             title="Questions we hear a lot"
-            description="Reduce friction by answering the basics upfront."
+            description="A few quick answers to the things travelers ask us most often."
           />
           <div className="mt-6">
             <Accordion
@@ -150,7 +150,7 @@ export default function AboutPage() {
                 {
                   title: "Do you handle corporate retreats?",
                   content:
-                    "Yes. The corporate page is designed as a proposal-first flow for HR/admin teams.",
+                    "Yes. Head to our Corporate page and send through your team's details, and we'll get back to you with a tailored proposal.",
                 },
                 {
                   title: "Is payment available via M-Pesa?",

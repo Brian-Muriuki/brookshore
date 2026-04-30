@@ -1,42 +1,56 @@
+import Image from "next/image";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
-import QuoteForm from "@/components/QuoteForm";
-import { ButtonLink } from "@/components/Button";
+import AudienceInquiryForm from "@/components/AudienceInquiryForm";
+import { getAudiencePackageBySlug } from "@/data/audiencePackages";
 
 export const metadata = {
-  title: "Corporate Travel",
+  title: "Executive Retreat",
 };
 
 export default function CorporatePage() {
+  const executiveRetreat = getAudiencePackageBySlug("executive-retreat");
+
+  if (!executiveRetreat) {
+    return null;
+  }
+
   return (
     <div>
       <section className="border-b border-border bg-muted py-12 sm:py-16">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-center">
             <div>
               <div className="text-xs font-semibold tracking-widest text-brand uppercase">
-                Corporate
+                Executive Retreat
               </div>
               <h1 className="mt-2 text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
-                Corporate travel & retreats, handled end-to-end
+                Leadership retreats and strategy offsites, handled end-to-end
               </h1>
               <p className="mt-4 text-pretty text-sm leading-7 text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
-                A clean B2B flow for HR and admin teams: proposals, venues,
-                transport, activities, and support — with clear timelines and a
-                single point of contact.
+                Whether you&apos;re booking a board offsite, a leadership strategy session, or an
+                NGO retreat, we sort the venue, AV, rooms, transport, and on-site
+                coordination so you can spend your time on the agenda, not the spreadsheet.
               </p>
-              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <ButtonLink href="#proposal">Request a proposal</ButtonLink>
-                <ButtonLink href="/contact" variant="secondary">
-                  Talk to us
-                </ButtonLink>
+
+              <div className="mt-7 flex flex-wrap gap-3 text-sm">
+                <span className="rounded-full border border-border bg-background px-4 py-2 font-semibold">
+                  {executiveRetreat.duration}
+                </span>
+                <span className="rounded-full border border-border bg-background px-4 py-2 font-semibold">
+                  {executiveRetreat.groupSize}
+                </span>
+                <span className="rounded-full bg-brand px-4 py-2 font-semibold text-white">
+                  {executiveRetreat.priceFrom} {executiveRetreat.priceUnit}
+                </span>
               </div>
+
               <div className="mt-6 flex flex-wrap gap-2 text-xs text-[color-mix(in_oklab,var(--foreground)_70%,transparent)]">
                 <span className="rounded-full border border-border bg-background px-3 py-1">
-                  24/7 support
+                  Dedicated event coordinator
                 </span>
                 <span className="rounded-full border border-border bg-background px-3 py-1">
-                  Dedicated account manager
+                  Venue + AV ready
                 </span>
                 <span className="rounded-full border border-border bg-background px-3 py-1">
                   Budget-first planning
@@ -44,37 +58,14 @@ export default function CorporatePage() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-border bg-background p-6">
-              <div className="text-sm font-semibold">Services</div>
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                {[
-                  {
-                    title: "Team building",
-                    desc: "Activities, venues, facilitators, and logistics.",
-                  },
-                  {
-                    title: "Retreats & offsites",
-                    desc: "Naivasha, Mara, Coast — curated experiences.",
-                  },
-                  {
-                    title: "MICE",
-                    desc: "Meetings, conferences, events, group travel.",
-                  },
-                  {
-                    title: "Transport",
-                    desc: "Shuttles, airport transfers, fleet options.",
-                  },
-                ].map((s) => (
-                  <div
-                    key={s.title}
-                    className="rounded-2xl border border-border bg-card p-4"
-                  >
-                    <div className="text-sm font-semibold">{s.title}</div>
-                    <div className="mt-1 text-sm text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
-                      {s.desc}
-                    </div>
-                  </div>
-                ))}
+            <div className="overflow-hidden rounded-[28px] border border-border bg-card shadow-xl shadow-black/5">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src={executiveRetreat.image}
+                  alt={executiveRetreat.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
@@ -84,37 +75,17 @@ export default function CorporatePage() {
       <section className="py-14 sm:py-18">
         <Container>
           <SectionHeading
-            eyebrow="Value"
-            title="Built for efficiency (not browsing)"
-            description="Corporate clients need proposals, clear accountability, and predictable operations."
+            eyebrow="What’s included"
+            title="Everything you need, sorted in one go"
+            description="Pick your destination and dates, send us your team&rsquo;s requirements, and we&rsquo;ll come back with a proposal that already covers the venue, logistics, and the small details you&rsquo;d normally have to chase."
           />
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                title: "Fast proposals",
-                desc: "Structured request form and clear next steps.",
-              },
-              {
-                title: "Dedicated support",
-                desc: "One point of contact from planning to delivery.",
-              },
-              {
-                title: "Cost control",
-                desc: "Budget ranges and transparent inclusions.",
-              },
-              {
-                title: "Reliable execution",
-                desc: "On-time transport and contingency planning.",
-              },
-            ].map((v) => (
+            {executiveRetreat.included.map((item) => (
               <div
-                key={v.title}
+                key={item}
                 className="rounded-2xl border border-border bg-card p-5"
               >
-                <div className="text-sm font-semibold">{v.title}</div>
-                <p className="mt-2 text-sm leading-6 text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
-                  {v.desc}
-                </p>
+                <div className="text-sm font-semibold">{item}</div>
               </div>
             ))}
           </div>
@@ -124,19 +95,12 @@ export default function CorporatePage() {
       <section className="border-y border-border bg-muted py-14 sm:py-18">
         <Container>
           <SectionHeading
-            eyebrow="Trusted By"
-            title="Teams we support"
-            description="From small teams to large organizations — locally and across the region."
+            eyebrow="Best for"
+            title="Teams that need structure, not just a venue"
+            description="If you&rsquo;ve been juggling vendors, hotel quotes, and transport spreadsheets, this is the easier route. Tell us what your team needs and we&rsquo;ll build the rest around it."
           />
           <div className="mt-8 flex flex-wrap gap-2">
-            {[
-              "Finance",
-              "Tech",
-              "NGOs",
-              "Education",
-              "SMEs",
-              "Professional services",
-            ].map((label) => (
+            {executiveRetreat.idealFor.map((label) => (
               <span
                 key={label}
                 className="rounded-full border border-border bg-background px-3 py-2 text-sm font-semibold"
@@ -148,80 +112,34 @@ export default function CorporatePage() {
         </Container>
       </section>
 
-      <section className="py-14 sm:py-18">
-        <Container>
-          <SectionHeading
-            eyebrow="Case Studies"
-            title="Problem → plan → outcome"
-            description="A simple framework for clear communication and delivery."
-          />
-          <div className="mt-8 grid gap-4 lg:grid-cols-3">
-            {[
-              {
-                problem: "30-person offsite, tight timelines",
-                plan: "Venue shortlist + transport plan + activity options.",
-                outcome: "Executed in 2 weeks with a single point of contact.",
-              },
-              {
-                problem: "Quarterly team building with budget controls",
-                plan: "Package tiers + clear inclusions/exclusions.",
-                outcome: "Predictable cost per head for each event.",
-              },
-              {
-                problem: "Airport transfers for visiting executives",
-                plan: "Meet & greet + reliable scheduling + standby support.",
-                outcome: "On-time pickups and smooth logistics.",
-              },
-            ].map((c) => (
-              <div
-                key={c.problem}
-                className="rounded-2xl border border-border bg-card p-5"
-              >
-                <div className="text-xs font-semibold tracking-widest text-brand uppercase">
-                  Case study
-                </div>
-                <div className="mt-3 text-sm font-semibold">Problem</div>
-                <p className="mt-1 text-sm text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
-                  {c.problem}
-                </p>
-                <div className="mt-4 text-sm font-semibold">Plan</div>
-                <p className="mt-1 text-sm text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
-                  {c.plan}
-                </p>
-                <div className="mt-4 text-sm font-semibold">Outcome</div>
-                <p className="mt-1 text-sm text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
-                  {c.outcome}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section id="proposal" className="border-t border-border bg-muted py-14 sm:py-18">
+      <section id="proposal" className="py-14 sm:py-18">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1fr_520px] lg:items-start">
             <div>
               <SectionHeading
                 eyebrow="Proposal"
-                title="Tell us what you need"
-                description="Share your dates, group size, destination ideas, and budget range."
+                title="Tell us what your team needs"
+                description="Share your dates, headcount, destination ideas, and any specifics, and we&rsquo;ll come back with a proposal that fits how your team actually works."
               />
-              <div className="mt-6 rounded-2xl border border-border bg-background p-5 text-sm text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
+              <div className="mt-6 rounded-2xl border border-border bg-card p-5 text-sm text-[color-mix(in_oklab,var(--foreground)_75%,transparent)]">
                 <div className="font-semibold text-foreground">
                   Typical request details
                 </div>
                 <ul className="mt-3 grid gap-2">
-                  <li>Destination(s) and dates</li>
-                  <li>Group size and accommodation level</li>
-                  <li>Transport requirements</li>
-                  <li>Budget range per person</li>
-                  <li>Any activities (team building / CSR / gala dinner)</li>
+                  <li>Destination options and preferred dates</li>
+                  <li>Attendee count and accommodation level</li>
+                  <li>Transport and airport transfer needs</li>
+                  <li>Meeting, workshop, and AV expectations</li>
+                  <li>Any add-ons like team building, gala dinner, or wellness</li>
                 </ul>
               </div>
             </div>
 
-            <QuoteForm variant="corporate" />
+            <AudienceInquiryForm
+              package={executiveRetreat}
+              heading="Request an Executive Retreat proposal"
+              description="Send us the basics and we&rsquo;ll get back to you with a tailored Executive Retreat proposal, usually within one working day."
+            />
           </div>
         </Container>
       </section>

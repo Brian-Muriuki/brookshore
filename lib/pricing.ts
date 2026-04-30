@@ -138,7 +138,7 @@ export function getTripFitMessage(
 
   if (selectedDays < min) {
     return {
-      message: `You've saved ${items.length} experiences — that usually fits ${min}-${max} days. Consider marking some as "If time".`,
+      message: `You've saved ${items.length} experiences. That's usually a ${min}-${max} day trip. Try marking a few as "If time".`,
       status: "warning",
     };
   }

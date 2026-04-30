@@ -2,16 +2,17 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Container from "./Container";
 
 export default function HeroSection() {
+  const locale = useLocale();
   const t = useTranslations("hero");
   const tCommon = useTranslations("common");
 
   const scrollToPackages = (e: React.MouseEvent) => {
     e.preventDefault();
-    const element = document.getElementById("packages");
+    const element = document.getElementById("packages-by-group");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -55,7 +56,7 @@ export default function HeroSection() {
                 {tCommon("viewPackages")}
               </button>
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/20"
               >
                 {tCommon("talkToExpert")}

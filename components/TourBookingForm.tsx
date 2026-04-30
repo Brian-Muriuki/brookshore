@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Tour } from "@/data/tours";
+import { getLeadClientContext } from "@/lib/leadContext";
 import { generateTripRef, WHATSAPP_NUMBER } from "@/lib/tripRef";
 
 type AccommodationTier = "3-star" | "4-star" | "5-star";
@@ -110,15 +111,17 @@ export default function TourBookingForm({ tour, onSuccess }: TourBookingFormProp
 
     try {
       const tripRef = generateTripRef();
+      const leadContext = getLeadClientContext();
 
       // Submit to API
-      await fetch("/api/leads", {
+      const res = await fetch("/api/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           variant: "tour-booking",
           tripRef,
           tourId: tour.id,
+          tourSlug: tour.slug,
           tourTitle: tour.title,
           name: formData.name,
           email: formData.email,
@@ -130,8 +133,16 @@ export default function TourBookingForm({ tour, onSuccess }: TourBookingFormProp
           airportTransfers: formData.airportTransfers,
           accommodationTier: formData.accommodationTier,
           notes: formData.notes,
+          ...leadContext,
         }),
       });
+
+      if (!res.ok) {
+        const data = (await res.json().catch(() => null)) as
+          | { error?: string }
+          | null;
+        throw new Error(data?.error || "Request failed");
+      }
 
       // Generate WhatsApp message
       const message = `Hi! I'd like to book the ${tour.title} tour.

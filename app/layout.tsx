@@ -7,12 +7,12 @@ export const metadata: Metadata = {
     template: "%s | Brookshores Safaris",
   },
   description:
-    "Brookshores Safaris — curated Kenya safaris, beach holidays, weekend getaways, and corporate travel solutions.",
+    "Brookshores Safaris: curated Kenya safaris, beach holidays, weekend getaways, and corporate travel.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   openGraph: {
     title: "Brookshores Safaris",
     description:
-      "Explore Kenya with Brookshores Safaris — safari packages, coastal escapes, and corporate travel.",
+      "Explore Kenya with Brookshores Safaris: safari packages, coastal escapes, and corporate travel.",
     type: "website",
     images: [
       "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80",
@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+  },
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
   },
 };
 

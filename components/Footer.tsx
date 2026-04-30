@@ -2,21 +2,24 @@
 
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
+import BrandLogo from "./BrandLogo";
 import Container from "./Container";
+import { getContactEmail, getContactPhone } from "@/lib/contact";
 
 export default function Footer() {
-  const phone = process.env.NEXT_PUBLIC_PHONE;
-  const email = process.env.NEXT_PUBLIC_EMAIL;
+  const phone = getContactPhone();
+  const email = getContactEmail();
   const locale = useLocale();
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
+  const packagesHref = `/${locale}#packages-by-group`;
 
   return (
     <footer className="border-t border-border bg-background">
       <Container>
         <div className="grid gap-10 py-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="text-base font-semibold">Brookshores Safaris</div>
+            <BrandLogo className="h-14 w-[190px] sm:h-16 sm:w-[216px]" />
             <p className="mt-3 max-w-md text-sm leading-6 text-[color-mix(in_oklab,var(--foreground)_70%,transparent)]">
               {t("tagline")}
             </p>
@@ -25,7 +28,7 @@ export default function Footer() {
           <div>
             <div className="text-sm font-semibold">{t("quickLinks")}</div>
             <div className="mt-3 flex flex-col gap-2 text-sm">
-              <Link className="hover:underline" href={`/${locale}#packages`}>
+              <Link className="hover:underline" href={packagesHref}>
                 {tNav("packages")}
               </Link>
               <Link className="hover:underline" href={`/${locale}/corporate`}>
@@ -44,7 +47,14 @@ export default function Footer() {
             <div className="text-sm font-semibold">{t("contact")}</div>
             <div className="mt-3 space-y-2 text-sm text-[color-mix(in_oklab,var(--foreground)_78%,transparent)]">
               {phone ? <div>Phone: {phone}</div> : null}
-              {email ? <div>Email: {email}</div> : null}
+              {email ? (
+                <div>
+                  Email:{" "}
+                  <a className="font-medium text-brand hover:underline" href={`mailto:${email}`}>
+                    {email}
+                  </a>
+                </div>
+              ) : null}
               <div>{t("location")}</div>
             </div>
             <div className="mt-4 flex flex-wrap gap-2 text-xs">

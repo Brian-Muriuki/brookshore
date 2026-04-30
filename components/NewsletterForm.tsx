@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { getLeadClientContext } from "@/lib/leadContext";
 
 function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
@@ -33,13 +34,14 @@ export default function NewsletterForm() {
     setStatus("submitting");
 
     try {
+      const leadContext = getLeadClientContext();
       const res = await fetch("/api/leads", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
           variant: "newsletter",
           email: trimmed,
-          page: typeof window !== "undefined" ? window.location.pathname : undefined,
+          ...leadContext,
         }),
       });
       if (!res.ok) {

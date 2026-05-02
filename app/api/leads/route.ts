@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { formatKenyaTimestamp } from "@/lib/datetime";
 import { normalizeLeadPhone } from "@/lib/phone";
 
 const GOOGLE_SHEETS_WEBHOOK_URL = process.env.GOOGLE_SHEETS_WEBHOOK_URL?.trim();
@@ -108,7 +109,7 @@ function calculateTripDays(startDate: string, endDate: string) {
 
 function createBaseRow(payload: LeadPayload, leadType: string): SheetRow {
   return {
-    timestamp: new Date().toISOString(),
+    timestamp: formatKenyaTimestamp(),
     leadType,
     variant: payload.variant || leadType,
     leadSource: payload.leadSource?.trim() || "website",

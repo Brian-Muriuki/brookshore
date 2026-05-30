@@ -94,20 +94,35 @@ export default function CorporatePage() {
 
       <section className="border-y border-border bg-muted py-14 sm:py-18">
         <Container>
-          <SectionHeading
-            eyebrow="Best for"
-            title="Teams that need structure, not just a venue"
-            description="If you&rsquo;ve been juggling vendors, hotel quotes, and transport spreadsheets, this is the easier route. Tell us what your team needs and we&rsquo;ll build the rest around it."
-          />
-          <div className="mt-8 flex flex-wrap gap-2">
-            {executiveRetreat.idealFor.map((label) => (
-              <span
-                key={label}
-                className="rounded-full border border-border bg-background px-3 py-2 text-sm font-semibold"
-              >
-                {label}
-              </span>
-            ))}
+          <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+            <div>
+              <SectionHeading
+                eyebrow="Best for"
+                title="Teams that need structure, not just a venue"
+                description="If you&rsquo;ve been juggling vendors, hotel quotes, and transport spreadsheets, this is the easier route. Tell us what your team needs and we&rsquo;ll build the rest around it."
+              />
+              <div className="mt-8 flex flex-wrap gap-2">
+                {executiveRetreat.idealFor.map((label) => (
+                  <span
+                    key={label}
+                    className="rounded-full border border-border bg-background px-3 py-2 text-sm font-semibold"
+                  >
+                    {label}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-[28px] border border-border bg-card shadow-lg shadow-black/5">
+              <div className="relative aspect-[4/5] bg-[#f6efe3]">
+                <Image
+                  src="/images/posters/conference-bookings.jpeg"
+                  alt="Brookshores Safaris conference bookings poster"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
           </div>
         </Container>
       </section>

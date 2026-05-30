@@ -11,6 +11,7 @@ import PackageGrid from "@/components/PackageGrid";
 import TourGrid from "@/components/TourGrid";
 import SeasonalSpotlight from "@/components/SeasonalSpotlight";
 import AudiencePackagesSection from "@/components/AudiencePackagesSection";
+import BookingPostersSection from "@/components/BookingPostersSection";
 
 export default function Home() {
   const locale = useLocale();
@@ -27,6 +28,7 @@ export default function Home() {
       <TrustStrip />
       <SeasonalSpotlight />
       <AudiencePackagesSection />
+      <BookingPostersSection />
 
       {/* Safari Packages Section */}
       <section id="packages" className="py-14 sm:py-18 scroll-mt-20">
